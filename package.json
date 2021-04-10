@@ -1,0 +1,25 @@
+{
+  "name": "chess-game",
+  "version": "0.0.1",
+  "description": "A test chess game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andfaulkner/chess-game-test.git"
+  },
+  "author": "Andrew Faulkner",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/andfaulkner/chess-game-test/issues"
+  },
+  "homepage": "https://github.com/andfaulkner/chess-game-test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
