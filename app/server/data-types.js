@@ -127,4 +127,36 @@ console.log(jimBob.getAge());
 
 console.log(jimBob.whatIAm);
 
+const janeNotdoe = buildPerson('Jane', 'Notdoe', 30);
+console.log(janeNotdoe.lastName);
+janeNotdoe.haveBirthday();
+janeNotdoe.haveBirthday();
+janeNotdoe.haveBirthday();
+console.log(janeNotdoe.getAge());
+
+//-------- null data type --------
+let nullValue = null;
+console.log(nullValue);
+
+//-------- undefined data type --------
+let undefinedValue;
+console.log(undefinedValue);
+
+//-------- boolean data type --------
+const trueVal = true;
+const falseVal = false;
+console.log(trueVal);
+console.log(falseVal);
+
+const orangeFruit = {
+    color: 'orange',
+    ageInMonths: 1,
+    isPeeled: false
+};
+console.log(orangeFruit);
+
+orangeFruit.isPeeled = true;
+console.log(orangeFruit);
+
+// Export
 module.exports = buildPerson;
