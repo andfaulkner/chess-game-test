@@ -1,4 +1,4 @@
-const buildPerson = require('./data-types');
+const buildPerson = require('./helpers/data-types');
 
 console.log('\n\nBACK IN SERVER');
 

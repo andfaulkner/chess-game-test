@@ -94,10 +94,11 @@ fruitArr.forEach((item, idx) => {
 
 const dollarsInAccounts = [22, 55, 100, 200];
 
-dollarsInAccounts.forEach((dollars) => {
+dollarsInAccounts.forEach((dollars, idx) => {
     const newVal = (dollars + 10) * 5;
     console.log(newVal);
 });
+
 
 // NEXT:
 //      MAP
