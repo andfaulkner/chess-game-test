@@ -75,8 +75,41 @@ const accountsWithIndex =
  *  }
  *
  */
-console.log("accountsWithIndex:", accountsWithIndex);
+ console.log("accountsWithIndex:", accountsWithIndex);
 
-// -----
-// NEXT: DO REDUCE
-// -----
+ 
+//------------------------- REDUCE -------------------------
+const totalMoney = accountDollarsArray.reduce((accumulator, currentNumber) => {
+    return accumulator + currentNumber;
+}, 0);
+
+console.log(totalMoney);
+
+const farmAnimals = [
+    {animalType: 'pig', age: 6, makeSound: () => `Oink`},
+    {animalType: 'cow', age: 2, makeSound: () => `Moo`},
+    {animalType: 'chicken', age: 5, makeSound: () => `Bock`},
+    {animalType: 'sheep', age: 1, makeSound: () => `Baa`},
+];
+
+const animalSoundsList = farmAnimals.reduce((acc, animal) => {
+    return acc + `animalType: ` + animal.makeSound() + `\n`;
+}, ``);
+console.log("animalSoundsList:", animalSoundsList);
+
+//------------------------- FILTER -------------------------
+const fuckThePoors = accountDollarsArray.filter(amount => amount > 200);
+console.log("fuckThePoors:", fuckThePoors);
+
+
+//-------------------- PROGRAMMING PARADIGMS (BASIC INTRO) --------------------
+// Equivalent to:
+
+// Functional style
+const totalFunc = accountDollarsArray.reduce((acc, num) => acc + num, 0);
+
+// Procedural style
+let totalImp = 0;
+for (const iterator of accountDollarsArray) {
+    totalImp = totalImp + iterator;
+}

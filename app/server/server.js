@@ -1,13 +1,3 @@
-const buildPerson = require('./helpers/data-types');
-
-console.log('\n\nBACK IN SERVER');
-
-const billyBob = buildPerson('billy', 'bob', 48);
-billyBob.haveBirthday();
-console.log(billyBob.getAge());
-
-
-
 const express = require('express');
 const app = express();
 
@@ -24,4 +14,3 @@ app.use(
 const server = app.listen(8080, () => {
     console.log('Server listening at port 8080');
 });
-
