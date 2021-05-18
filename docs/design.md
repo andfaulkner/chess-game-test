@@ -1,9 +1,9 @@
 
--   Next meeting: set up React
+-   Next meeting: start building! (react is set up)
 
 # TODO
 !   Install prettier
--   Set up webpack for building react
+!   Set up webpack for building react
 -   Configure prettier
 -   
 
