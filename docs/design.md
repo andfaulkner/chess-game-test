@@ -1,6 +1,11 @@
 
 -   Next meeting: set up React
 
+# TODO
+!   Install prettier
+-   Set up webpack for building react
+-   Configure prettier
+-   
 
 # Must-haves - checkers:
 -   Set up board

@@ -75,7 +75,7 @@ const accountsWithIndex =
  *  }
  *
  */
- console.log("accountsWithIndex:", accountsWithIndex);
+console.log("accountsWithIndex:", accountsWithIndex);
 
  
 //------------------------- REDUCE -------------------------

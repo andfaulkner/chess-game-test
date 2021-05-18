@@ -5,7 +5,7 @@ const app = express();
  * Add static server plugin
  */
 app.use(
-    express.static('app/client')
+    express.static('build')
 );
 
 /*
