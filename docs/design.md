@@ -4,8 +4,19 @@
 # TODO
 !   Install prettier
 !   Set up webpack for building react
--   Configure prettier
+!   Configure prettier
+    !   Automate in script
+!   Classes
+    !   Inheritance
+!   React static components
+    !   React class components
+    !   React stateless functional components
+    !   Container vs view basic concept
+!   React rendering to DOM
+-   React props
 -   
+
+
 
 # Must-haves - checkers:
 -   Set up board

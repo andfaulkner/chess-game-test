@@ -1,18 +1,18 @@
 // Third-party imports
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BoardContainer} from './components/board/board-container';
 
-// Component
+/**
+ * React component
+ */
 class Game extends React.Component {
+    /**
+     * Whatever is returned by this method, gets rendered in the HTML page.
+     */
     render() {
         return (
-            <div className="game">
-                <div className="game-board">EMPTY</div>
-                <div className="game-info">
-                    <div>STATUS</div>
-                    <ol>TODO</ol>
-                </div>
-            </div>
+            <BoardContainer />
         );
     }
 }
