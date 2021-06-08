@@ -1,5 +1,5 @@
 // Third-party imports
-import React from "react";
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Component
@@ -18,4 +18,4 @@ class Game extends React.Component {
 }
 
 // Render
-ReactDOM.render(<Game />, document.getElementById("root"));
+ReactDOM.render(<Game />, document.getElementById('root'));

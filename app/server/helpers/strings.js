@@ -36,9 +36,7 @@ Armand Besse
 Juanita Joeson
 `;
 
-const juanitas = textBlock
-    .match(/\nJuanita.+\n/g)
-    .map((name) => name.replace(/\n/g, ""));
+const juanitas = textBlock.match(/\nJuanita.+\n/g).map(name => name.replace(/\n/g, ''));
 console.log(juanitas);
 
 const words = textBlock.match(/[a-zA-Z]+/g);

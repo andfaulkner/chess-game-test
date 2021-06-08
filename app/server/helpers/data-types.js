@@ -18,22 +18,22 @@ console.log(steve);
 
 //-------- Object data type --------
 const meeka = {
-    name: "meeka the dog",
+    name: 'meeka the dog',
     age: 10
 };
 console.log(meeka);
 console.log(meeka.age);
 
 const nissan = {
-    brand: "Nissan",
-    color: "black",
+    brand: 'Nissan',
+    color: 'black',
     year: 2020,
-    model: "pathfinder"
+    model: 'pathfinder'
 };
 console.log(nissan);
 console.log(nissan.year);
 
-nissan.color = "orange";
+nissan.color = 'orange';
 console.log(nissan);
 
 delete nissan.year;
@@ -52,13 +52,10 @@ console.log(fruit);
 
 console.log(fruit[0]);
 
-const magicNumbers = [22, 77, 44, 14, 25, 97, 6010]; 
+const magicNumbers = [22, 77, 44, 14, 25, 97, 6010];
 console.log(magicNumbers);
 
-const cars = [
-    {brand: "Dodge", model: "Charger", year: 2020, color: "black"},
-    nissan
-];
+const cars = [{brand: 'Dodge', model: 'Charger', year: 2020, color: 'black'}, nissan];
 
 console.log(cars);
 console.log(cars.length);
@@ -79,7 +76,7 @@ const logBasicShit = () => {
 logBasicShit();
 
 // Function with 1 argument
-const logName = (nameArg) => {
+const logName = nameArg => {
     console.log(`Your name is ${nameArg}`);
 };
 
@@ -100,7 +97,7 @@ const buildFullName = (firstName, lastName) => {
     return fullName;
 };
 
-const someName = buildFullName("John", "Doe");
+const someName = buildFullName('John', 'Doe');
 console.log(someName);
 
 // Factory function - makes mutable object

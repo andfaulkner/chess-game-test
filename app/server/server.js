@@ -4,9 +4,7 @@ const app = express();
 /*
  * Add static server plugin
  */
-app.use(
-    express.static('build')
-);
+app.use(express.static('build'));
 
 /*
  * Launch the server

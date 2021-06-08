@@ -3,11 +3,11 @@ const ericAge = 27;
 const brodyAge = 28;
 
 if (ericAge > brodyAge) {
-    console.log("Eric is older than Brody");
+    console.log('Eric is older than Brody');
 } else if (ericAge === brodyAge) {
-    console.log("Eric is the same age as Brody");
+    console.log('Eric is the same age as Brody');
 } else {
-    console.log("Brody is older than Eric");
+    console.log('Brody is older than Eric');
 }
 
 //----- DON'T DO THIS -----
@@ -23,16 +23,15 @@ if (element === 'H') {
 
 //----- DO THIS INSTEAD ----
 const periodicTable = {
-    H: "Hydrogen",
-    He: "Helium",
-    Na: "Sodium",
-    Mg: "Magnesium"
+    H: 'Hydrogen',
+    He: 'Helium',
+    Na: 'Sodium',
+    Mg: 'Magnesium'
     // etc.
 };
 
 const element1 = 'Mg';
 console.log(`This element is ${periodicTable[element1]}`);
-
 
 //------------------------ SWITCH STATEMENTS ------------------------
 const fruit = 'guava';
@@ -40,22 +39,22 @@ const fruit2 = 'pear';
 const fruit3 = 'pineapple';
 const fruit4 = 'aeirughesirughergijo';
 
-switch(fruit4) {
+switch (fruit4) {
     case 'guava':
-        console.log("This fruit is a guava WOOT");
+        console.log('This fruit is a guava WOOT');
         break;
 
     case 'pear':
-        console.log("This fruit is a pear HEY");
+        console.log('This fruit is a pear HEY');
         break;
 
     case 'pineapple':
     case 'passionfruit':
-        console.log("This fruit is tropical YO");
+        console.log('This fruit is tropical YO');
         break;
 
     default:
-        console.log("This is an unknown fruit GR");
+        console.log('This is an unknown fruit GR');
 }
 
 let lifeUniverseEverything = 42;
@@ -66,9 +65,8 @@ lifeUniverseEverything++;
 //    lifeUniverseEverything = lifeUniverseEverything + 1;
 console.log(lifeUniverseEverything);
 
-
 //-------------------------- BASIC FOR LOOPS --------------------------
-for(let idx = 0; idx <= 10; idx++) {
+for (let idx = 0; idx <= 10; idx++) {
     console.log(`My current index is: ${idx}`);
 }
 // USE RARELY
@@ -76,15 +74,14 @@ for(let idx = 0; idx <= 10; idx++) {
 //-------------------------- FOR OF LOOPS --------------------------
 const pieces = ['rook', 'knight', 'bishop', 'queen', 'king', 'pawn'];
 
-for(let piece of pieces) {
+for (let piece of pieces) {
     console.log(piece);
 }
-
 
 //------------------------- FOR-EACH LOOPS -------------------------
 const fruitArr = ['apple', 'mango', 'papaya'];
 
-fruitArr.forEach((item) => {
+fruitArr.forEach(item => {
     console.log(item);
 });
 
@@ -99,12 +96,10 @@ dollarsInAccounts.forEach((dollars, idx) => {
     console.log(newVal);
 });
 
-
 // NEXT:
 //      MAP
 //      REDUCE
 //      FILTER
-
 
 // const vegetableArr = ['carrot', 'lettuce', 'onion'];
 
@@ -119,4 +114,3 @@ dollarsInAccounts.forEach((dollars, idx) => {
 // forEach(vegetableArr, (item, idx) => {
 //     console.log(`Vegetable number ${idx} is ${item}`);
 // });
-
