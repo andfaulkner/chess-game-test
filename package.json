@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/andfaulkner/chess-game-test#readme",
   "dependencies": {
+    "classnames": "^2.3.1",
     "express": "^4.17.1",
     "mobx": "^6.3.0",
     "mobx-react": "^7.1.0",
@@ -30,9 +31,14 @@
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "dart-sass": "^1.25.0",
+    "fibers": "^5.0.0",
     "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
     "nodemon": "^2.0.7",
     "prettier": "^2.3.0",
+    "sass-loader": "^12.1.0",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0"
   }
