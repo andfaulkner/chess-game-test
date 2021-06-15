@@ -12,7 +12,9 @@ import cn from 'classnames';
 export const BoardView = (props) => {
     return (
         <div>
-            <div className={cn(s['test-board-header'])}>Board view here</div>
+            <div className={cn(s['test-board-header'])}>
+                Board view here
+            </div>
         </div>
     );
 };
