@@ -9,80 +9,95 @@ import cn from 'classnames';
  * Render a chessboard cell of the given colour.
  * @param {'black' | 'white'} props.color Colour of the cell being rendered
  * @param {0 | 1 | 2} props.children Type of piece (or not) to render
- */ 
-const Cell = (props) => {
+ */
+const Cell = props => {
+    return <div className={cn(s['cell'], s[props.color])}>{props.children}</div>;
+};
+
+/**
+ * Render a piece if present in a cell.
+ * @param {0 | 1 | 2} children If 0, no piece, if 1, blue piece, if 2, red piece.
+ */
+const CellContent = props => {
+    const {children} = props;
     return (
-        <div className={cn(s['cell'], s[props.color])}>
-            {props.children}
-        </div>
+        <div
+            className={cn(
+                children === 0
+                    ? ''
+                    : children === 1
+                    ? s['piece'] + ' ' + s['blue']
+                    : s['piece'] + ' ' + s['red']
+            )}
+        />
     );
-}
+};
 
 /**
  * Render a single row of the board.
  * @param {boolean} [props.offset] If true, offset the colour order by one.
  * @param {(0 | 1 | 2)[]} props.rowPositions
  */
-const Row = (props) => {
+const Row = props => {
     console.log(`Row props:`, props);
     if (props.offset) {
         return (
-            <div className={cn(s["row"])}>
+            <div className={cn(s['row'])}>
                 <Cell color="white">
-                    {props.rowPositions[0]}
+                    <CellContent>{props.rowPositions[0]}</CellContent>
                 </Cell>
                 <Cell color="black">
-                    {props.rowPositions[1]}
+                    <CellContent>{props.rowPositions[1]}</CellContent>
                 </Cell>
                 <Cell color="white">
-                    {props.rowPositions[2]}
+                    <CellContent>{props.rowPositions[2]}</CellContent>
                 </Cell>
                 <Cell color="black">
-                    {props.rowPositions[3]}
+                    <CellContent>{props.rowPositions[3]}</CellContent>
                 </Cell>
                 <Cell color="white">
-                    {props.rowPositions[4]}
+                    <CellContent>{props.rowPositions[4]}</CellContent>
                 </Cell>
                 <Cell color="black">
-                    {props.rowPositions[5]}
+                    <CellContent>{props.rowPositions[5]}</CellContent>
                 </Cell>
                 <Cell color="white">
-                    {props.rowPositions[6]}
+                    <CellContent>{props.rowPositions[6]}</CellContent>
                 </Cell>
                 <Cell color="black">
-                    {props.rowPositions[7]}
+                    <CellContent>{props.rowPositions[7]}</CellContent>
                 </Cell>
             </div>
-        )
+        );
     } else {
         return (
-            <div className={cn(s["row"])}>
+            <div className={cn(s['row'])}>
                 <Cell color="black">
-                    {props.rowPositions[0]}
+                    <CellContent>{props.rowPositions[0]}</CellContent>
                 </Cell>
                 <Cell color="white">
-                    {props.rowPositions[1]}
+                    <CellContent>{props.rowPositions[1]}</CellContent>
                 </Cell>
                 <Cell color="black">
-                    {props.rowPositions[2]}
+                    <CellContent>{props.rowPositions[2]}</CellContent>
                 </Cell>
                 <Cell color="white">
-                    {props.rowPositions[3]}
+                    <CellContent>{props.rowPositions[3]}</CellContent>
                 </Cell>
                 <Cell color="black">
-                    {props.rowPositions[4]}
+                    <CellContent>{props.rowPositions[4]}</CellContent>
                 </Cell>
                 <Cell color="white">
-                    {props.rowPositions[5]}
+                    <CellContent>{props.rowPositions[5]}</CellContent>
                 </Cell>
                 <Cell color="black">
-                    {props.rowPositions[6]}
+                    <CellContent>{props.rowPositions[6]}</CellContent>
                 </Cell>
                 <Cell color="white">
-                    {props.rowPositions[7]}
+                    <CellContent>{props.rowPositions[7]}</CellContent>
                 </Cell>
             </div>
-        )
+        );
     }
 };
 
@@ -93,21 +108,30 @@ const Row = (props) => {
  * @param {string} props.headerName name of the board.
  * @param {(0 | 1 | 2)[][]} props.piecePositions Positions of players' checkers pieces.
  */
-export const BoardView = (props) => {
+export const BoardView = props => {
+    const {swapSides, headerName, piecePositions, children} = props;
+
     return (
         <div>
-            <h1 className={cn(s['board-header'])}>{props.headerName}</h1>
-            <h2>{props.children}</h2>
-            <div className={cn(s["board"])}>
-                <Row rowPositions={props.piecePositions[0]}/>
-                <Row offset rowPositions={props.piecePositions[1]}/>
-                <Row rowPositions={props.piecePositions[2]}/>
-                <Row offset rowPositions={props.piecePositions[3]}/>
-                <Row rowPositions={props.piecePositions[4]}/>
-                <Row offset rowPositions={props.piecePositions[5]}/>
-                <Row rowPositions={props.piecePositions[6]}/>
-                <Row offset rowPositions={props.piecePositions[7]}/>
+            <h1 className={cn(s['board-header'])}>{headerName}</h1>
+            <h2>{children}</h2>
+            <div className={cn(s['board'])}>
+                <Row rowPositions={piecePositions[0]} />
+                <Row offset rowPositions={piecePositions[1]} />
+                <Row rowPositions={piecePositions[2]} />
+                <Row offset rowPositions={piecePositions[3]} />
+                <Row rowPositions={piecePositions[4]} />
+                <Row offset rowPositions={piecePositions[5]} />
+                <Row rowPositions={piecePositions[6]} />
+                <Row offset rowPositions={piecePositions[7]} />
             </div>
+            <button
+                onClick={ev => {
+                    swapSides();
+                }}
+            >
+                Swap sides
+            </button>
         </div>
     );
 };
