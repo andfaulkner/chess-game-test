@@ -14,7 +14,9 @@
     !   Container vs view basic concept
 !   React rendering to DOM
 -   React props
--   
+
+-   Source maps
+-   Refactor to do Row component rendering of pieces sanely
 
 
 

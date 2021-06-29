@@ -1,3 +1,25 @@
-.test-board-header {
+.board-header {
     font-size: 25px;
 }
+
+.board {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: fit-content;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+}
+
+.white {background-color: beige}
+.black {background-color: black}
