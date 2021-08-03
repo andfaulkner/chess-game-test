@@ -108,6 +108,20 @@ const Row = props => {
 };
 
 /**
+ * Button to swap which side is red and which is blue
+ * Example: <SwapSidesButton onClick={swapSides} />
+ */
+const SwapSidesButton = (props) => {
+    return (
+        <button
+            onClick={ev => props.onClick()}
+        >
+            Swap sides
+        </button>
+    );
+};
+
+/**
  * Board view UI component.
  * (React stateless functional component).
  *
@@ -119,7 +133,7 @@ export const BoardView = props => {
     const {swapSides, headerName, piecePositions, children, clickCell} = props;
 
     return (
-        <div>
+        <div style={{width: 'fit-content'}}>
             <h1 className={cn(s['board-header'])}>{headerName}</h1>
             <h2>{children}</h2>
             <div className={cn(s['board'])}>
@@ -132,13 +146,29 @@ export const BoardView = props => {
                 <Row rowPositions={piecePositions[6]} clickCell={clickCell} row={6} />
                 <Row offset rowPositions={piecePositions[7]} clickCell={clickCell} row={7} />
             </div>
-            <button
-                onClick={ev => {
-                    swapSides();
+
+            {/* BUTTON FOR SWAPPING WHICH SIDE IS WHICH */}
+            <SwapSidesButton onClick={swapSides} />
+
+            {/* INPUT BOXES */}
+            <div
+                style={{
+                    display: `flex`,
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                    marginTop: 5,
                 }}
             >
-                Swap sides
-            </button>
+                <div>
+                    <label style={{marginRight: 2}}>From:</label>
+                    <input id="from"></input>
+                </div>
+                <div>
+                    <label style={{marginRight: 2}}>To:</label>
+                    <input id="to"></input>
+                </div>
+            </div>
         </div>
     );
 };

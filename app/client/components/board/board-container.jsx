@@ -54,7 +54,6 @@ export class BoardContainer extends React.Component {
         ]);
     };
 
-
     /**
      * Define behaviour on clicking cell.
      *
@@ -78,5 +77,3 @@ export class BoardContainer extends React.Component {
         );
     }
 }
-
-// export const BoardContainer = inject('appState')(BoardContainerRaw);

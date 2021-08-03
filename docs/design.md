@@ -20,6 +20,22 @@
 !   Draw pieces
 !   Click cell method placeholder
 !   Pass row and column index into click cell method (make cells aware of location)
+---
+
+-   Making pieces move
+    -   Create input boxes (to and from)
+        -   Make clicking a cell select a piece if piece is present
+            -   Selecting piece inputs the cell coordinates into the box
+    -   Disable swap sides once a move is made
+    -   Block invalid moves
+        -   If invalid:
+            -   Block move (revert or don't allow at all)
+            -   Show error message
+            -   Clear input boxes
+    -   Update board on valid move
+        -   Update positions to have change in the correct one
+        -   TODO set up logic for jumping over pieces
+        
 
 -   Set up cell selection and basic piece movement
 
