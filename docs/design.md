@@ -13,11 +13,98 @@
     !   React stateless functional components
     !   Container vs view basic concept
 !   React rendering to DOM
--   React props
+!   React props
+!   React children
+
+!   React state - setState
+!   Draw pieces
+!   Click cell method placeholder
+!   Pass row and column index into click cell method (make cells aware of location)
+
+-   Set up cell selection and basic piece movement
+
+-   Game rules
+    -   Take turns on the same machine logic
+        -   Turn logic
+    -   Capture logic
+    -   Kinging
+        -   King move logic
+    -   Endgame conditions
+    -   Restart button at endgame
+    -   End early button
+
+-   REST API routes (express.js):
+    -   Join/start game
+    -   Submit move
+    -   End game / forfeit
+
+-   Socket routes (socket.io):
+    -   Ongoing game (receive other moves, end game)
+
+-   Read about it
+    -   
+-   Play around with it
+---
+
+
+---
+Homework
+========
+-   Stay away from r/javascript
+
+-   Set up computer to auto-backup .bashrc and .bash_profile
+    -   cron job
+    -   date
+
+-   Get to know express.js better
+    -   Make your own toy server that does (some sort of thing)
+    -   fs
+    -   path
+    -   process
+
+-   Get to know react.js better
+
+-   Get to know Redis and the driver
+
+-   Research socket libraries:
+    -   Popularity - the more popular, the better
+    -   How active the project is
+    -   Maturity - how long it's existed
+    -   Speed - look at benchmarks (especially comparative benchmarks)
+    -   Stability - does it crash, leak memory
+    -   Developer responsiveness - do they close tickets? How many maintainers?
+    -   Feature set - does it do everything we need it to?
+
+
+---
+Install these:
+-   VS Code
+-   Some sort of terminal
+-   Git
+-   Node.js
+-   Pull repo
+-   Install node.js libraries
+
+---
+
+
+
+-   Sign up for free deployment environment (probably Heroku)
+    -   
+
+-   Redis
+
+-   Server
+    -   
+    -   Websockets
+    -   
 
 -   Source maps
+
 -   Refactor to do Row component rendering of pieces sanely
 
+# Bonus materials later
+-   Typescript
 
 
 # Must-haves - checkers:
@@ -32,9 +119,9 @@
 -   Username input
 -   Ready button (on inputting username)
 
-## Backend 
+## Backend
 -   Route to receive username input
-    -   ...and store username in 
+    -   ...and store username in
     -   Matching when 2nd user joins (in database)
     -   Web sockets to send responses in real-time down to page
 -   Route to receive moves
@@ -45,7 +132,7 @@
 
 
 ---
-Ignore for now:::
+Ignore for now ::
 
 Should-have:
 -   Castling
