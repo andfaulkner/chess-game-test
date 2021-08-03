@@ -54,12 +54,24 @@ export class BoardContainer extends React.Component {
         ]);
     };
 
+
+    /**
+     * Define behaviour on clicking cell.
+     *
+     * @param {number} row Which row was clicked (0-indexed)
+     * @param {number} col Which column was clicked (0-indexed)
+     */
+    clickCell = (row, col) => {
+        console.log('ran clickCell with row:', row, 'col:', col);
+    };
+
     render() {
         return (
             <BoardView
                 headerName={`Checkers board`}
                 piecePositions={this.state.piecePositions}
                 swapSides={this.swapSides}
+                clickCell={this.clickCell}
             >
                 HEY!
             </BoardView>
