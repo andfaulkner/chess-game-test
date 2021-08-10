@@ -6,7 +6,7 @@ import cn from 'classnames';
 import s from './board.scss';
 
 // Project imports
-import {MoveInputBox} from '../move-input-box/move-input-box';
+import {CoordinatesBar} from '../coordinates-bar'
 
 /**
  * Render a chessboard cell of the given colour.
@@ -125,14 +125,14 @@ const SwapSidesButton = props => {
  * @param {string} props.headerName name of the board.
  * @param {(0 | 1 | 2)[][]} props.piecePositions Positions of players' checkers pieces.
  * @param {(row: number, col: number) => any} props.clickCell Click handler for clicking any cell
+ * @param {Function} props.setInputBoxValue Sets the values of the from & to coordinates.
  */
 export const BoardView = props => {
-    const {swapSides, headerName, piecePositions, children, clickCell} = props;
+    const {swapSides, headerName, piecePositions, clickCell} = props;
 
     return (
         <div style={{width: 'fit-content'}}>
             <h1 className={cn(s['board-header'])}>{headerName}</h1>
-            <h2>{children}</h2>
             <div className={cn(s['board'])}>
                 <Row rowPositions={piecePositions[0]} clickCell={clickCell} row={0} />
                 <Row offset rowPositions={piecePositions[1]} clickCell={clickCell} row={1} />
@@ -148,28 +148,7 @@ export const BoardView = props => {
             <SwapSidesButton onClick={swapSides} />
 
             {/* INPUT BOXES */}
-            <div
-                style={{
-                    display: `flex`,
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    width: '100%',
-                    marginTop: 5,
-                }}
-            >
-                <MoveInputBox
-                    id="move-input-box--from"
-                    label="From"
-                    onChangeX={value => props.setInputBoxValue('from', 'x', value)}
-                    onChangeY={value => props.setInputBoxValue('from', 'y', value)}
-                />
-                <MoveInputBox
-                    id="move-input-box--to"
-                    label="To"
-                    onChangeX={value => props.setInputBoxValue('to', 'x', value)}
-                    onChangeY={value => props.setInputBoxValue('to', 'y', value)}
-                />
-            </div>
+            <CoordinatesBar setInputBoxValue={props.setInputBoxValue}/>
         </div>
     );
 };

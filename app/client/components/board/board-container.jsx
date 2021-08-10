@@ -99,9 +99,7 @@ export class BoardContainer extends React.Component {
                 swapSides={this.swapSides}
                 clickCell={this.clickCell}
                 setInputBoxValue={this.setInputBoxValue}
-            >
-                HEY!
-            </BoardView>
+            />
         );
     }
 }
