@@ -114,14 +114,8 @@ const Row = props => {
  * Button to swap which side is red and which is blue
  * Example: <SwapSidesButton onClick={swapSides} />
  */
-const SwapSidesButton = (props) => {
-    return (
-        <button
-            onClick={ev => props.onClick()}
-        >
-            Swap sides
-        </button>
-    );
+const SwapSidesButton = props => {
+    return <button onClick={ev => props.onClick()}>Swap sides</button>;
 };
 
 /**
@@ -163,8 +157,18 @@ export const BoardView = props => {
                     marginTop: 5,
                 }}
             >
-                <MoveInputBox id="move-input-box--from" label="From" />
-                <MoveInputBox id="move-input-box--to" label="To" />
+                <MoveInputBox
+                    id="move-input-box--from"
+                    label="From"
+                    onChangeX={value => props.setInputBoxValue('from', 'x', value)}
+                    onChangeY={value => props.setInputBoxValue('from', 'y', value)}
+                />
+                <MoveInputBox
+                    id="move-input-box--to"
+                    label="To"
+                    onChangeX={value => props.setInputBoxValue('to', 'x', value)}
+                    onChangeY={value => props.setInputBoxValue('to', 'y', value)}
+                />
             </div>
         </div>
     );

@@ -28,7 +28,9 @@ export class MoveInputBox extends React.Component {
      */
     onChangeX = ev => {
         const value = ev.target.value;
-        this.setState({valueX: value});
+        const numValue = parseInt(value);
+        this.setState({valueX: numValue});
+        this.props.onChangeX(numValue);
     };
 
     /**
@@ -36,7 +38,9 @@ export class MoveInputBox extends React.Component {
      */
     onChangeY = ev => {
         const value = ev.target.value;
-        this.setState({valueY: value});
+        const numValue = parseInt(value);
+        this.setState({valueY: numValue});
+        this.props.onChangeY(numValue);
     };
 
     render() {
