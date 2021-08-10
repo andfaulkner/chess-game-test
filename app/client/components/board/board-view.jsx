@@ -163,8 +163,8 @@ export const BoardView = props => {
                     marginTop: 5,
                 }}
             >
-                <MoveInputBox id="move-input-box--from" label="From:" />
-                <MoveInputBox id="move-input-box--to" label="To:" />
+                <MoveInputBox id="move-input-box--from" label="From" />
+                <MoveInputBox id="move-input-box--to" label="To" />
             </div>
         </div>
     );
