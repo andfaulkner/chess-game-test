@@ -1,9 +1,12 @@
 // Third-party imports
 import React from 'react';
+import cn from 'classnames';
 
 // Assets
 import s from './board.scss';
-import cn from 'classnames';
+
+// Project imports
+import {MoveInputBox} from '../move-input-box/move-input-box';
 
 /**
  * Render a chessboard cell of the given colour.
@@ -160,14 +163,8 @@ export const BoardView = props => {
                     marginTop: 5,
                 }}
             >
-                <div>
-                    <label style={{marginRight: 2}}>From:</label>
-                    <input id="from"></input>
-                </div>
-                <div>
-                    <label style={{marginRight: 2}}>To:</label>
-                    <input id="to"></input>
-                </div>
+                <MoveInputBox id="move-input-box--from" label="From:" />
+                <MoveInputBox id="move-input-box--to" label="To:" />
             </div>
         </div>
     );
