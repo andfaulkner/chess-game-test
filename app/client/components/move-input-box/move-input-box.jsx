@@ -7,20 +7,33 @@ import s from './move-input-box.scss';
 
 /**
  * Render an input box for accepting coordinates relating to a move.
+ *
  * @property {string} id DOM id for the input box
  * @property {string} label Label attached to the component
  */
 export class MoveInputBox extends React.Component {
     state = {
+        /**
+         * Value of first box (x-coordinate).
+         */
         valueX: 1,
-        valueY: 1,
+        /**
+         * Value of second box (y-coordinate).
+         */
+         valueY: 1,
     };
 
+    /**
+     * Change value of first box (x-coordinate).
+     */
     onChangeX = ev => {
         const value = ev.target.value;
         this.setState({valueX: value});
     };
 
+    /**
+     * Change value of second box (y-coordinate).
+     */
     onChangeY = ev => {
         const value = ev.target.value;
         this.setState({valueY: value});
