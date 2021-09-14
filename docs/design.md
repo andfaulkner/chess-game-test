@@ -23,9 +23,14 @@
 ---
 
 -   Making pieces move
-    -   Create input boxes (to and from)
-        -   Make clicking a cell select a piece if piece is present
-            -   Selecting piece inputs the cell coordinates into the box
+    !   Create input boxes (to and from)
+
+    -   Make submitMove able to control pieces
+
+    -   Add EditorConfig
+
+    -   Make clicking a cell select a piece if piece is present
+        -   Selecting piece inputs the cell coordinates into the box
     -   Disable swap sides once a move is made
     -   Block invalid moves
         -   If invalid:

@@ -27,8 +27,6 @@ export class BoardContainer extends React.Component {
             [0, 2, 0, 2, 0, 2, 0, 2],
             [2, 0, 2, 0, 2, 0, 2, 0],
         ],
-        fromInputValues: [1, 1],
-        toInputValues: [1, 1],
     };
 
     /**
@@ -67,28 +65,13 @@ export class BoardContainer extends React.Component {
     };
 
     /**
-     * Change the content of one of the input coordinate boxes.
-     * @param {'from'|'to'} boxType Which of the box types the change occurred in.
-     * @param {'x'|'y'} coordinate Which of the 2 coordinate boxes has been changed.
-     * @param {number} value Content of the changed box.
+     * Submits a move.
+     *
+     * @param {{from: {x: number, y: number}, to: {x: number, y: number}}} props.moveValues
+     *        Object containing coordinates required to move a piece.
      */
-    setInputBoxValue = (boxType, coordinate, value) => {
-        if (boxType === 'from') {
-            if (coordinate === 'x') {
-                this.setState({fromInputValues: [value, this.state.fromInputValues[1]]});
-            } else {
-                this.setState({fromInputValues: [this.state.fromInputValues[0], value]});
-            }
-        } else if (boxType === 'to') {
-            if (coordinate === 'x') {
-                this.setState({toInputValues: [value, this.state.toInputValues[1]]});
-            } else {
-                this.setState({toInputValues: [this.state.toInputValues[0], value]});
-            }
-        }
-
-        console.log('setInputBoxValue :: this.state.toInputValues:', this.state.toInputValues);
-        console.log('setInputBoxValue :: this.state.fromInputValues:', this.state.fromInputValues);
+    submitMove = (moveValues) => {
+        console.log("submitMove :: moveValues:", moveValues);
     };
 
     render() {
@@ -98,7 +81,7 @@ export class BoardContainer extends React.Component {
                 piecePositions={this.state.piecePositions}
                 swapSides={this.swapSides}
                 clickCell={this.clickCell}
-                setInputBoxValue={this.setInputBoxValue}
+                submitMove={this.submitMove}
             />
         );
     }

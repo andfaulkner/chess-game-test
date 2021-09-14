@@ -12,24 +12,12 @@ import s from './move-input-box.scss';
  * @property {string} label Label attached to the component
  */
 export class MoveInputBox extends React.Component {
-    state = {
-        /**
-         * Value of first box (x-coordinate).
-         */
-        valueX: 1,
-        /**
-         * Value of second box (y-coordinate).
-         */
-         valueY: 1,
-    };
-
     /**
      * Change value of first box (x-coordinate).
      */
     onChangeX = ev => {
         const value = ev.target.value;
         const numValue = parseInt(value);
-        this.setState({valueX: numValue});
         this.props.onChangeX(numValue);
     };
 
@@ -39,7 +27,6 @@ export class MoveInputBox extends React.Component {
     onChangeY = ev => {
         const value = ev.target.value;
         const numValue = parseInt(value);
-        this.setState({valueY: numValue});
         this.props.onChangeY(numValue);
     };
 
@@ -53,7 +40,7 @@ export class MoveInputBox extends React.Component {
                     type="number"
                     id={this.props.id + '_x'}
                     onChange={ev => this.onChangeX(ev)}
-                    value={this.state.valueX}
+                    value={this.props.value.x}
                     min={1}
                     max={8}
                 ></input>
@@ -61,7 +48,7 @@ export class MoveInputBox extends React.Component {
                     type="number"
                     id={this.props.id + '_y'}
                     onChange={ev => this.onChangeY(ev)}
-                    value={this.state.valueY}
+                    value={this.props.value.y}
                     min={1}
                     max={8}
                 ></input>

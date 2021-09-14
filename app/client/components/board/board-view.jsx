@@ -6,7 +6,7 @@ import cn from 'classnames';
 import s from './board.scss';
 
 // Project imports
-import {CoordinatesBar} from '../coordinates-bar'
+import {CoordinatesBar} from '../coordinates-bar';
 
 /**
  * Render a chessboard cell of the given colour.
@@ -126,6 +126,7 @@ const SwapSidesButton = props => {
  * @param {(0 | 1 | 2)[][]} props.piecePositions Positions of players' checkers pieces.
  * @param {(row: number, col: number) => any} props.clickCell Click handler for clicking any cell
  * @param {Function} props.setInputBoxValue Sets the values of the from & to coordinates.
+ * @param {() => any} props.submitMove Move piece based on the content of the coordinates bar.
  */
 export const BoardView = props => {
     const {swapSides, headerName, piecePositions, clickCell} = props;
@@ -148,7 +149,9 @@ export const BoardView = props => {
             <SwapSidesButton onClick={swapSides} />
 
             {/* INPUT BOXES */}
-            <CoordinatesBar setInputBoxValue={props.setInputBoxValue}/>
+            <CoordinatesBar
+                submitMove={props.submitMove}
+            />
         </div>
     );
 };

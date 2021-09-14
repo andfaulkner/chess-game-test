@@ -11,9 +11,75 @@ import s from './coordinates-bar.scss';
 /**
  * Render an input box for accepting coordinates relating to a move.
  *
- * @property {Function} setInputBoxValue Sets value of one of the coordinate boxes.
+ * @property {Function} props.setInputBoxValue Sets value of one of the coordinate boxes.
+ * @property {() => any} props.submitMove Move piece based on the content of the coordinates bar.
+ *
  */
 export class CoordinatesBar extends React.Component {
+    state = {
+        from: {
+            /**
+             * Value of first box (x-coordinate).
+             */
+            x: 1,
+            /**
+             * Value of second box (y-coordinate).
+             */
+            y: 1,
+        },
+        to: {
+            /**
+             * Value of first box (x-coordinate).
+             */
+            x: 1,
+            /**
+             * Value of second box (y-coordinate).
+             */
+            y: 1,
+        },
+    };
+
+    /**
+     * Change the content of one of the input coordinate boxes.
+     * @param {'from'|'to'} boxType Which of the box types the change occurred in.
+     * @param {'x'|'y'} coordinate Which of the 2 coordinate boxes has been changed.
+     * @param {number} value Content of the changed box.
+     */
+    changeValue = (boxType, coordinate, value) => {
+        this.setState({[boxType]: {[coordinate]: value}});
+        console.log('changeValue :: this.state:', this.state);
+    };
+
+    /**
+     * Change the content of one of the input coordinate boxes.
+     * @param {'from'|'to'} boxType Which of the box types the change occurred in.
+     * @param {'x'|'y'} coordinate Which of the 2 coordinate boxes has been changed.
+     * @param {number} value Content of the changed box.
+     */
+    //  setInputBoxValue = (boxType, coordinate, value) => {
+    //     if (boxType === 'from') {
+    //         if (coordinate === 'x') {
+    //             this.setState({fromInputValues: [value, this.state.fromInputValues[1]]});
+    //         } else {
+    //             this.setState({fromInputValues: [this.state.fromInputValues[0], value]});
+    //         }
+    //     } else if (boxType === 'to') {
+    //         if (coordinate === 'x') {
+    //             this.setState({toInputValues: [value, this.state.toInputValues[1]]});
+    //         } else {
+    //             this.setState({toInputValues: [this.state.toInputValues[0], value]});
+    //         }
+    //     }
+
+    //     console.log('setInputBoxValue :: this.state.toInputValues:', this.state.toInputValues);
+    //     console.log('setInputBoxValue :: this.state.fromInputValues:', this.state.fromInputValues);
+    // };
+
+    submitMove = () => {
+        this.props.submitMove(this.state);
+        console.log('submitMove (CoordinateBar) :: this.state:', this.state);
+    };
+
     render() {
         return (
             <div
@@ -28,16 +94,20 @@ export class CoordinatesBar extends React.Component {
                 <MoveInputBox
                     id="move-input-box--from"
                     label="From"
-                    onChangeX={value => this.props.setInputBoxValue('from', 'x', value)}
-                    onChangeY={value => this.props.setInputBoxValue('from', 'y', value)}
+                    onChangeX={value => this.changeValue('from', 'x', value)}
+                    onChangeY={value => this.changeValue('from', 'y', value)}
+                    value={this.state.from}
                 />
                 <MoveInputBox
                     id="move-input-box--to"
                     label="To"
-                    onChangeX={value => this.props.setInputBoxValue('to', 'x', value)}
-                    onChangeY={value => this.props.setInputBoxValue('to', 'y', value)}
+                    onChangeX={value => this.changeValue('to', 'x', value)}
+                    onChangeY={value => this.changeValue('to', 'y', value)}
+                    value={this.state.to}
                 />
-                <button type="submit">Submit</button>
+                <button type="submit" onClick={this.submitMove}>
+                    Submit
+                </button>
             </div>
         );
     }
