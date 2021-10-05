@@ -37,7 +37,9 @@ const CellContent = props => {
                     ? s['piece'] + ' ' + s['blue']
                     : s['piece'] + ' ' + s['red']
             )}
-        />
+        >
+            {children}
+        </div>
     );
 };
 
@@ -134,6 +136,7 @@ export const BoardView = props => {
     return (
         <div style={{width: 'fit-content'}}>
             <h1 className={cn(s['board-header'])}>{headerName}</h1>
+            <h2>Current player: {props.currentPlayer}</h2>
             <div className={cn(s['board'])}>
                 <Row rowPositions={piecePositions[0]} clickCell={clickCell} row={0} />
                 <Row offset rowPositions={piecePositions[1]} clickCell={clickCell} row={1} />
