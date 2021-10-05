@@ -22,6 +22,8 @@
 !   Pass row and column index into click cell method (make cells aware of location)
 ---
 
+-   Add source mapping
+
 -   Making pieces move
     !   Create input boxes (to and from)
 
