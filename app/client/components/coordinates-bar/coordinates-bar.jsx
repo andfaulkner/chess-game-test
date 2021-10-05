@@ -46,34 +46,17 @@ export class CoordinatesBar extends React.Component {
      * @param {number} value Content of the changed box.
      */
     changeValue = (boxType, coordinate, value) => {
-        this.setState({[boxType]: {[coordinate]: value}});
+        if (coordinate === 'x') {
+            this.setState({
+                [boxType]: {x: value, y: this.state[boxType].y}
+            });
+        } else {
+            this.setState({
+                [boxType]: {x: this.state[boxType].x, y: value}
+            });
+        }
         console.log('changeValue :: this.state:', this.state);
     };
-
-    /**
-     * Change the content of one of the input coordinate boxes.
-     * @param {'from'|'to'} boxType Which of the box types the change occurred in.
-     * @param {'x'|'y'} coordinate Which of the 2 coordinate boxes has been changed.
-     * @param {number} value Content of the changed box.
-     */
-    //  setInputBoxValue = (boxType, coordinate, value) => {
-    //     if (boxType === 'from') {
-    //         if (coordinate === 'x') {
-    //             this.setState({fromInputValues: [value, this.state.fromInputValues[1]]});
-    //         } else {
-    //             this.setState({fromInputValues: [this.state.fromInputValues[0], value]});
-    //         }
-    //     } else if (boxType === 'to') {
-    //         if (coordinate === 'x') {
-    //             this.setState({toInputValues: [value, this.state.toInputValues[1]]});
-    //         } else {
-    //             this.setState({toInputValues: [this.state.toInputValues[0], value]});
-    //         }
-    //     }
-
-    //     console.log('setInputBoxValue :: this.state.toInputValues:', this.state.toInputValues);
-    //     console.log('setInputBoxValue :: this.state.fromInputValues:', this.state.fromInputValues);
-    // };
 
     submitMove = () => {
         this.props.submitMove(this.state);
