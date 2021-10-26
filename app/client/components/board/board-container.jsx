@@ -59,17 +59,40 @@ export class BoardContainer extends React.Component {
      */
     changeCoordinateBoxContents = (boxType, coordinate, value) => {
         if (coordinate === 'x') {
-            this.setState({
-                boxContents: {
-                    [boxType]: {x: value, y: this.state[boxType].y}
-                }
-            });
-        } else {
-            this.setState({
-                boxContents: {
-                    [boxType]: {x: this.state[boxType].x, y: value}
-                }
-            });
+            if (boxType === 'from') {
+                this.setState({
+                    boxContents: {
+                        from: {x: value, y: this.state.boxContents.from.y},
+                        to: {x: this.state.boxContents.to.x, y: this.state.boxContents.to.y}
+                    }
+                });
+            } else {
+                this.setState({
+                    boxContents: {
+                        from: {x: this.state.boxContents.from.x, y: this.state.boxContents.from.y},
+                        to: {x: value, y: this.state.boxContents.to.y},
+                    }
+                });
+            }
+        }
+        
+        // coordinate = y
+        else {
+            if (boxType === 'from') {
+                this.setState({
+                    boxContents: {
+                        from: {x: this.state.boxContents.from.x, y: value},
+                        to: {x: this.state.boxContents.to.x, y: this.state.boxContents.to.y}
+                    }
+                });
+            } else {
+                this.setState({
+                    boxContents: {
+                        from: {x: this.state.boxContents.from.x, y: this.state.boxContents.from.y},
+                        to: {x: this.state.boxContents.to.x, y: value},
+                    }
+                });
+            }
         }
         console.log('changeValue :: this.state:', this.state);
     };
@@ -110,6 +133,8 @@ export class BoardContainer extends React.Component {
     clickCell = (row, col) => {
         console.log('ran clickCell with row:', row, 'col:', col);
         console.log(this.state.piecePositions[row][col]);
+        this.changeCoordinateBoxContents('from', 'x', row);
+        this.changeCoordinateBoxContents('from', 'y', col);
     };
 
     /**
