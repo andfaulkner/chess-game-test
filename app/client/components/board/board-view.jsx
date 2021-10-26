@@ -137,16 +137,21 @@ export const BoardView = props => {
         <div style={{width: 'fit-content'}}>
             <h1 className={cn(s['board-header'])}>{headerName}</h1>
             <h2>Current player: {props.currentPlayer}</h2>
-            <div className={cn(s['board'])}>
-                <Row rowPositions={piecePositions[0]} clickCell={clickCell} row={0} />
-                <Row offset rowPositions={piecePositions[1]} clickCell={clickCell} row={1} />
-                <Row rowPositions={piecePositions[2]} clickCell={clickCell} row={2} />
-                <Row offset rowPositions={piecePositions[3]} clickCell={clickCell} row={3} />
-                <Row rowPositions={piecePositions[4]} clickCell={clickCell} row={4} />
-                <Row offset rowPositions={piecePositions[5]} clickCell={clickCell} row={5} />
-                <Row rowPositions={piecePositions[6]} clickCell={clickCell} row={6} />
-                <Row offset rowPositions={piecePositions[7]} clickCell={clickCell} row={7} />
-            </div>
+            {/* <div className={cn(s['board'])}>
+                {piecePositions.map((pos, idx) => 
+                    <Row key={idx} offset={idx % 2 !== 0} rowPositions={pos} clickCell={clickCell} row={idx}/>
+                )}
+            </div> */}
+
+            <Row rowPositions={piecePositions[0]} clickCell={clickCell} row={0} />
+            <Row offset rowPositions={piecePositions[1]} clickCell={clickCell} row={1} />
+            <Row rowPositions={piecePositions[2]} clickCell={clickCell} row={2} />
+            <Row offset rowPositions={piecePositions[3]} clickCell={clickCell} row={3} />
+            <Row rowPositions={piecePositions[4]} clickCell={clickCell} row={4} />
+            <Row offset rowPositions={piecePositions[5]} clickCell={clickCell} row={5} />
+            <Row rowPositions={piecePositions[6]} clickCell={clickCell} row={6} />
+            <Row offset rowPositions={piecePositions[7]} clickCell={clickCell} row={7} />
+
 
             {/* BUTTON FOR SWAPPING WHICH SIDE IS WHICH */}
             <SwapSidesButton onClick={swapSides} />

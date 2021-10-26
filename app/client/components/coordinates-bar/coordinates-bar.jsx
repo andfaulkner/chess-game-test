@@ -21,17 +21,17 @@ export class CoordinatesBar extends React.Component {
             /**
              * Value of first box (x-coordinate).
              */
-            x: 1,
+            x: 5,
             /**
              * Value of second box (y-coordinate).
              */
-            y: 1,
+            y: 0,
         },
         to: {
             /**
              * Value of first box (x-coordinate).
              */
-            x: 1,
+            x: 4,
             /**
              * Value of second box (y-coordinate).
              */

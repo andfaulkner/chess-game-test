@@ -83,10 +83,10 @@ export class BoardContainer extends React.Component {
         const isRed = this.state.currentPlayer === 'red';
         const isBlue = !isRed;
 
-        const fromX = moveValues.from.x - 1;
-        const fromY = moveValues.from.y - 1;
-        const toX = moveValues.to.x - 1;
-        const toY = moveValues.to.y - 1;
+        const fromX = moveValues.from.x;
+        const fromY = moveValues.from.y;
+        const toX = moveValues.to.x;
+        const toY = moveValues.to.y;
 
         const piecePositions = this.state.piecePositions;
 
@@ -96,7 +96,7 @@ export class BoardContainer extends React.Component {
 
         // Get content of selected "from" location (i.e. whether the piece is 1 or 2 i.e. red or blue)
         // NOTE: change when adding kings
-        const selCellContent = piecePositions[fromY][fromX];
+        const selCellContent = piecePositions[fromX][fromY];
         console.log("selCellContent:", selCellContent);
 
         // If true, a valid piece is selected based on the current player and cell content
@@ -107,14 +107,14 @@ export class BoardContainer extends React.Component {
         /** @type [number, number][] newCoordsAllowed */
         let newCoordsAllowed = [];
         if (isRed) {
-            newCoordsAllowed = [[fromX - 1, fromY - 1], [fromX + 1, fromY - 1]].filter(coord => {
+            newCoordsAllowed = [[fromX - 1, fromY - 1], [fromX - 1, fromY + 1]].filter(coord => {
                 if (coord[0] < 0 || coord[0] >= 8) return false;
                 if (coord[1] < 0 || coord[1] >= 8) return false;
                 return true;
             })
         } else if (isBlue) {
             // TODO Confirm this is correct
-            newCoordsAllowed = [[fromX - 1, fromY + 1], [fromX + 1, fromY + 1]].filter(coord => {
+            newCoordsAllowed = [[fromX + 1, fromY + 1], [fromX + 1, fromY - 1]].filter(coord => {
                 if (coord[0] < 0 || coord[0] >= 8) return false;
                 if (coord[1] < 0 || coord[1] >= 8) return false;
                 return true;
@@ -141,8 +141,8 @@ export class BoardContainer extends React.Component {
 
         // Check if allowed, erase original piece, then draw at new location
         if (isValidPieceSelected && isMoveValid) {
-            piecePositions[fromY][fromX] = 0;
-            piecePositions[toY][toX] = isRed ? 2 : 1;
+            piecePositions[fromX][fromY] = 0;
+            piecePositions[toX][toY] = isRed ? 2 : 1;
         }
         
         // Invalid move handling
