@@ -34,6 +34,8 @@ export class BoardContainer extends React.Component {
     };
 
     /**
+     * Sets complete new board layout from mutated board.
+     *
      * @param {number[][]} newPiecePositions New layout of board
      */
     updatePiecePositions = newPiecePositions => {
