@@ -13,51 +13,11 @@ import s from './coordinates-bar.scss';
  *
  * @property {Function} props.setInputBoxValue Sets value of one of the coordinate boxes.
  * @property {() => any} props.submitMove Move piece based on the content of the coordinates bar.
+ * @property {{x: number, y: number}} props.from Content of the coordinates bar "from" boxes.
+ * @property {{x: number, y: number}} props.to Content of the coordinates bar "to" boxes.
  *
  */
 export class CoordinatesBar extends React.Component {
-    state = {
-        from: {
-            /**
-             * Value of first box (x-coordinate).
-             */
-            x: 5,
-            /**
-             * Value of second box (y-coordinate).
-             */
-            y: 0,
-        },
-        to: {
-            /**
-             * Value of first box (x-coordinate).
-             */
-            x: 4,
-            /**
-             * Value of second box (y-coordinate).
-             */
-            y: 1,
-        },
-    };
-
-    /**
-     * Change the content of one of the input coordinate boxes.
-     * @param {'from'|'to'} boxType Which of the box types the change occurred in.
-     * @param {'x'|'y'} coordinate Which of the 2 coordinate boxes has been changed.
-     * @param {number} value Content of the changed box.
-     */
-    changeValue = (boxType, coordinate, value) => {
-        if (coordinate === 'x') {
-            this.setState({
-                [boxType]: {x: value, y: this.state[boxType].y}
-            });
-        } else {
-            this.setState({
-                [boxType]: {x: this.state[boxType].x, y: value}
-            });
-        }
-        console.log('changeValue :: this.state:', this.state);
-    };
-
     submitMove = () => {
         this.props.submitMove(this.state);
         console.log('submitMove (CoordinateBar) :: this.state:', this.state);
@@ -77,16 +37,16 @@ export class CoordinatesBar extends React.Component {
                 <MoveInputBox
                     id="move-input-box--from"
                     label="From"
-                    onChangeX={value => this.changeValue('from', 'x', value)}
-                    onChangeY={value => this.changeValue('from', 'y', value)}
-                    value={this.state.from}
+                    onChangeX={value => this.props.changeCoordinateBoxContents('from', 'x', value)}
+                    onChangeY={value => this.props.changeCoordinateBoxContents('from', 'y', value)}
+                    value={this.props.from}
                 />
                 <MoveInputBox
                     id="move-input-box--to"
                     label="To"
-                    onChangeX={value => this.changeValue('to', 'x', value)}
-                    onChangeY={value => this.changeValue('to', 'y', value)}
-                    value={this.state.to}
+                    onChangeX={value => this.props.changeCoordinateBoxContents('to', 'x', value)}
+                    onChangeY={value => this.props.changeCoordinateBoxContents('to', 'y', value)}
+                    value={this.props.to}
                 />
                 <button type="submit" onClick={this.submitMove}>
                     Submit

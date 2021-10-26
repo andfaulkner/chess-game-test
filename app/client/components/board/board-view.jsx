@@ -159,6 +159,9 @@ export const BoardView = props => {
             {/* INPUT BOXES */}
             <CoordinatesBar
                 submitMove={props.submitMove}
+                from={props.from}
+                to={props.to}
+                changeCoordinateBoxContents={props.changeCoordinateBoxContents}
             />
         </div>
     );

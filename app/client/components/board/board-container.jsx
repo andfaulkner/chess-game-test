@@ -31,6 +31,47 @@ export class BoardContainer extends React.Component {
          * @type {'red'|'blue'}
          */
         currentPlayer: 'red',
+
+        /**
+         * Contents of from and to boxes
+         */
+        boxContents: {
+            from: {
+                /** Value of first box (x-coordinate) */
+                x: 5,
+                /** Value of second box (y-coordinate) */
+                y: 0,
+            },
+            to: {
+                /** Value of first box (x-coordinate) */
+                x: 4,
+                /** Value of second box (y-coordinate) */
+                y: 1,
+            },   
+        }
+    };
+
+    /**
+     * Change the content of one of the input coordinate boxes.
+     * @param {'from'|'to'} boxType Which of the box types the change occurred in.
+     * @param {'x'|'y'} coordinate Which of the 2 coordinate boxes has been changed.
+     * @param {number} value Content of the changed box.
+     */
+    changeCoordinateBoxContents = (boxType, coordinate, value) => {
+        if (coordinate === 'x') {
+            this.setState({
+                boxContents: {
+                    [boxType]: {x: value, y: this.state[boxType].y}
+                }
+            });
+        } else {
+            this.setState({
+                boxContents: {
+                    [boxType]: {x: this.state[boxType].x, y: value}
+                }
+            });
+        }
+        console.log('changeValue :: this.state:', this.state);
     };
 
     /**
@@ -68,7 +109,7 @@ export class BoardContainer extends React.Component {
      */
     clickCell = (row, col) => {
         console.log('ran clickCell with row:', row, 'col:', col);
-
+        console.log(this.state.piecePositions[row][col]);
     };
 
     /**
@@ -181,6 +222,9 @@ export class BoardContainer extends React.Component {
                 clickCell={this.clickCell}
                 submitMove={this.submitMove}
                 currentPlayer={this.state.currentPlayer}
+                from={this.state.boxContents.from}
+                to={this.state.boxContents.to}
+                changeCoordinateBoxContents={this.changeCoordinateBoxContents}
             />
         );
     }
