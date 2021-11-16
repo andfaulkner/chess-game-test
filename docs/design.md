@@ -22,10 +22,25 @@
 !   Pass row and column index into click cell method (make cells aware of location)
 ---
 
--   Add source mapping
+[4, -1] [4, 1]
+
+-   New system setup
+    -   Get autocompletions working in VSCode again for jsx files
+    -   Get prettier working
+
+-   Refactors and codebase setup
+
 
 -   Making pieces move
     !   Create input boxes (to and from)
+    !   Refactor rows inside BoardView to be more concise
+
+    -   Fix x coordinate box updating on click
+
+    -   DEDICATE NEXT SESSION TO CLEANING TECHNICAL DEBT AND ADDITIONAL CODEBASE SETUP
+        -   Add source mapping
+        -   Create MobX state container
+        -   Add Typescript
 
     -   Make submitMove able to control pieces
 
