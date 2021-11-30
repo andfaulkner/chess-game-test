@@ -22,13 +22,20 @@
 !   Pass row and column index into click cell method (make cells aware of location)
 ---
 
-[4, -1] [4, 1]
-
 -   New system setup
     -   Get autocompletions working in VSCode again for jsx files
     -   Get prettier working
 
 -   Refactors and codebase setup
+    !   Add .editorconfig
+    -   Get rid of the commented-out code
+    -   No state store - issues:
+            Updating is a pain in the ass
+            Updates in "deep" objects are unreliable
+            Updating more than one thing at once is dangerous
+            Data can't be passed down in a clump easily
+    -   Add typechecking
+        -   Update to Typescript
 
 
 -   Making pieces move
