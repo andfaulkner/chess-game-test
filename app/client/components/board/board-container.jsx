@@ -47,8 +47,8 @@ export class BoardContainer extends React.Component {
                 x: 4,
                 /** Value of second box (y-coordinate) */
                 y: 1,
-            },   
-        }
+            },
+        },
     };
 
     /**
@@ -63,34 +63,34 @@ export class BoardContainer extends React.Component {
                 this.setState({
                     boxContents: {
                         from: {x: value, y: this.state.boxContents.from.y},
-                        to: {x: this.state.boxContents.to.x, y: this.state.boxContents.to.y}
-                    }
+                        to: {x: this.state.boxContents.to.x, y: this.state.boxContents.to.y},
+                    },
                 });
             } else {
                 this.setState({
                     boxContents: {
                         from: {x: this.state.boxContents.from.x, y: this.state.boxContents.from.y},
                         to: {x: value, y: this.state.boxContents.to.y},
-                    }
+                    },
                 });
             }
         }
-        
+
         // coordinate = y
         else {
             if (boxType === 'from') {
                 this.setState({
                     boxContents: {
                         from: {x: this.state.boxContents.from.x, y: value},
-                        to: {x: this.state.boxContents.to.x, y: this.state.boxContents.to.y}
-                    }
+                        to: {x: this.state.boxContents.to.x, y: this.state.boxContents.to.y},
+                    },
                 });
             } else {
                 this.setState({
                     boxContents: {
                         from: {x: this.state.boxContents.from.x, y: this.state.boxContents.from.y},
                         to: {x: this.state.boxContents.to.x, y: value},
-                    }
+                    },
                 });
             }
         }
@@ -131,7 +131,7 @@ export class BoardContainer extends React.Component {
      * @param {number} col Which column was clicked (0-indexed)
      */
     clickCell = (row, col) => {
-        console.log('ran clickCell with row:', row, 'col:', col);
+        console.log('Ran clickCell with row:', row, 'col:', col);
         console.log(this.state.piecePositions[row][col]);
         this.changeCoordinateBoxContents('from', 'x', row);
         this.changeCoordinateBoxContents('from', 'y', col);
@@ -143,9 +143,7 @@ export class BoardContainer extends React.Component {
      * @param {{from: {x: number, y: number}, to: {x: number, y: number}}} props.moveValues
      *        Object containing coordinates required to move a piece.
      */
-    submitMove = (moveValues) => {
-        console.log("submitMove :: moveValues:", moveValues);
-
+    submitMove = moveValues => {
         const isRed = this.state.currentPlayer === 'red';
         const isBlue = !isRed;
 
@@ -156,82 +154,69 @@ export class BoardContainer extends React.Component {
 
         const piecePositions = this.state.piecePositions;
 
-        // Correct up to here
-
-        // Selection failure conditions
-
-        // Get content of selected "from" location (i.e. whether the piece is 1 or 2 i.e. red or blue)
-        // NOTE: change when adding kings
+        /*
+         * Get content of selected "from" (as in place the piece is from) location - i.e.
+         * whether the piece is 1 or 2 i.e. red or blue).
+         * @TODO: change this behaviour when "kinging" pieces behaviour is added.
+         */
         const selCellContent = piecePositions[fromX][fromY];
-        console.log("selCellContent:", selCellContent);
 
         // If true, a valid piece is selected based on the current player and cell content
         const isValidPieceSelected = isRed ? selCellContent === 2 : selCellContent === 1;
-        console.log("isValidPieceSelected:", isValidPieceSelected);
 
-        // Define allowed move position here (basic - with basic piece).
+        // Define allowed move position here (basic action - with basic piece, requires behaviour
+        // for non-standard scenarios).
         /** @type [number, number][] newCoordsAllowed */
         let newCoordsAllowed = [];
         if (isRed) {
-            newCoordsAllowed = [[fromX - 1, fromY - 1], [fromX - 1, fromY + 1]].filter(coord => {
+            newCoordsAllowed = [
+                [fromX - 1, fromY - 1],
+                [fromX - 1, fromY + 1],
+            ].filter(coord => {
                 if (coord[0] < 0 || coord[0] >= 8) return false;
                 if (coord[1] < 0 || coord[1] >= 8) return false;
                 return true;
-            })
+            });
         } else if (isBlue) {
-            // TODO Confirm this is correct
-            newCoordsAllowed = [[fromX + 1, fromY + 1], [fromX + 1, fromY - 1]].filter(coord => {
+            newCoordsAllowed = [
+                [fromX + 1, fromY + 1],
+                [fromX + 1, fromY - 1],
+            ].filter(coord => {
                 if (coord[0] < 0 || coord[0] >= 8) return false;
                 if (coord[1] < 0 || coord[1] >= 8) return false;
                 return true;
-            })
+            });
         }
 
-        console.log("newCoordsAllowed:", newCoordsAllowed);
-
-        // If the requested location for the piece to move to is allowed by the rules of 
-        // checkers.
+        // If the requested location for the piece to move to is allowed by the rules of checkers.
         const isMoveValid = newCoordsAllowed.some(coord => {
             if (coord[0] === toX && coord[1] === toY) return true;
         });
-        console.log("isMoveValid:", isMoveValid);
-
-        // Check if the requested move location is allowed:
-        //    1. ! Check that there's a piece present of the right colour. [isValidPieceSelected]
-        //    2. ! Check the "to" location is valid. [isMoveValid]
-        //
-        // If allowed:
-        //      ! Update coordinates accordingly
-        // If not allowed:
-        //      Reject move (TODO figure out details after)
 
         // Check if allowed, erase original piece, then draw at new location
         if (isValidPieceSelected && isMoveValid) {
             piecePositions[fromX][fromY] = 0;
             piecePositions[toX][toY] = isRed ? 2 : 1;
         }
-        
+
         // Invalid move handling
         else {
-            // Make this reason specific
+            // @TODO Make this reason specific
             if (!isValidPieceSelected) {
                 alert(`You must select a cell containing one of your own pieces`);
-            }
-            else if (!isMoveValid) {
-                // [0, 1], [3, 4], [5, 2]
+            } else if (!isMoveValid) {
                 const allowedMoves = newCoordsAllowed.reduce((acc, coord, idx) => {
-                    acc = acc +
-                        ((idx !== 0) ? ', ' : '') +
-                        `(${coord[0] + 1},${coord[1] + 1})`;
+                    const commaMaybe = idx !== 0 ? ', ' : '';
+                    const coordinates = `(${coord[0] + 1},${coord[1] + 1})`;
+                    acc = `${acc}${commaMaybe}${coordinates}`;
                     return acc;
                 }, ``);
                 alert(`Invalid move. Available options: ${allowedMoves}`);
             }
             return;
         }
-        
+
         // If the rest of submitMove is successful, swap player
-        // 
         this.setState({
             currentPlayer: isRed ? 'blue' : 'red',
             piecePositions: piecePositions,

@@ -1,13 +1,15 @@
-// Third-party imports
+
+/*-------------------------------------------- ASSETS --------------------------------------------*/
+import s from './coordinates-bar.scss';
+
+/*------------------------------------- THIRD-PARTY IMPORTS --------------------------------------*/
 import React from 'react';
 import cn from 'classnames';
 
-// Project imports
+/*--------------------------------------- PROJECT IMPORTS ----------------------------------------*/
 import {MoveInputBox} from './move-input-box/move-input-box';
 
-// Assets
-import s from './coordinates-bar.scss';
-
+/*-------------------------------------------- EXPORT --------------------------------------------*/
 /**
  * Render an input box for accepting coordinates relating to a move.
  *
@@ -18,6 +20,9 @@ import s from './coordinates-bar.scss';
  *
  */
 export class CoordinatesBar extends React.Component {
+    /**
+     * Submit the current coordinates in the fields to the submitMove callback.
+     */
     submitMove = () => {
         this.props.submitMove(this.state);
         console.log('submitMove (CoordinateBar) :: this.state:', this.state);

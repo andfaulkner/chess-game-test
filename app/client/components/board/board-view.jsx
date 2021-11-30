@@ -137,12 +137,8 @@ export const BoardView = props => {
         <div style={{width: 'fit-content'}}>
             <h1 className={cn(s['board-header'])}>{headerName}</h1>
             <h2>Current player: {props.currentPlayer}</h2>
-            {/* <div className={cn(s['board'])}>
-                {piecePositions.map((pos, idx) => 
-                    <Row key={idx} offset={idx % 2 !== 0} rowPositions={pos} clickCell={clickCell} row={idx}/>
-                )}
-            </div> */}
 
+            {/* ACTUAL ROWS OF CHECKERS BOARD */}
             <Row rowPositions={piecePositions[0]} clickCell={clickCell} row={0} />
             <Row offset rowPositions={piecePositions[1]} clickCell={clickCell} row={1} />
             <Row rowPositions={piecePositions[2]} clickCell={clickCell} row={2} />
