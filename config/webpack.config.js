@@ -1,7 +1,10 @@
 //----- IMPORTS -----//
+const {path: rootPath} = require('app-root-path');
+const {isDevelopment, isProduction} = require('env-var-helpers');
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Fiber = require('fibers');
 
 console.log('path to build:', path.resolve(__dirname, '..', 'build'));
@@ -43,7 +46,19 @@ module.exports = {
 
     module: {
         rules: [
-
+            // Handle Typescript files
+            {
+                test: /\.tsx?$/,
+                use: [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            transpileOnly: true,
+                            configFile: path.join(rootPath, 'app/client/tsconfig.json'),
+                        },
+                    },
+                ],
+            },
             // Handle loading CSS files
             {
                 test: /\.css?$/,
