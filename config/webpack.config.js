@@ -5,9 +5,13 @@ const {isDevelopment, isProduction} = require('env-var-helpers');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+
 const Fiber = require('fibers');
 
 console.log('path to build:', path.resolve(__dirname, '..', 'build'));
+
+console.log(`path.join(rootPath, 'app/client/tsconfig.json'):`, path.join(rootPath, 'app/client/tsconfig.json'));
 
 //----- REUSABLE CONFIG SECTIONS -----/
 /**
@@ -37,8 +41,10 @@ console.log('path to build:', path.resolve(__dirname, '..', 'build'));
 
 //--- EXPORT ---//
 module.exports = {
+    context: path.resolve(__dirname, `..`, `app`, `client`),
+
     entry: {
-        index: path.resolve(__dirname, '..', 'app', 'client', 'index.jsx')
+        index: path.resolve(__dirname, '..', 'app', 'client', 'index.tsx')
     },
     output: {
         path: path.resolve(__dirname, '..', 'build')
@@ -93,6 +99,7 @@ module.exports = {
     },
 
     plugins: [
+        new ForkTsCheckerWebpackPlugin(),
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '..', 'app', 'client', 'index.html')

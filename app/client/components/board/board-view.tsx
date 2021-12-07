@@ -1,11 +1,11 @@
-// Third-party imports
+/*-------------------------------------------- ASSETS --------------------------------------------*/
+import s from './board.scss';
+
+/*------------------------------------- THIRD-PARTY IMPORTS --------------------------------------*/
 import React from 'react';
 import cn from 'classnames';
 
-// Assets
-import s from './board.scss';
-
-// Project imports
+/*--------------------------------------- PROJECT IMPORTS ----------------------------------------*/
 import {CoordinatesBar} from '../coordinates-bar';
 
 /**
@@ -130,7 +130,7 @@ const SwapSidesButton = props => {
  * @param {Function} props.setInputBoxValue Sets the values of the from & to coordinates.
  * @param {() => any} props.submitMove Move piece based on the content of the coordinates bar.
  */
-export const BoardView = props => {
+export const BoardView = (props) => {
     const {swapSides, headerName, piecePositions, clickCell} = props;
 
     return (

@@ -1,5 +1,6 @@
 /*------------------------------------- THIRD-PARTY MODULES --------------------------------------*/
 import {observable, action} from 'mobx';
+// import {rootStore} from '../../store/root-store';
 
 /*------------------------------------------- LOGGING --------------------------------------------*/
 import {logFactory, Styles} from 'mad-logs/lib/shared';
@@ -16,7 +17,7 @@ export class BoardStore {
      */
     static new = () => {
         log.verbose(`BoardStore#new :: Creating new BoardStore`);
-        return new BoardStore(rootStore);
+        return new BoardStore();
     }
 
     constructor() {}

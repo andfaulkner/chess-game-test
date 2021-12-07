@@ -1,4 +1,3 @@
-
 /*-------------------------------------------- ASSETS --------------------------------------------*/
 import s from './coordinates-bar.scss';
 
@@ -9,17 +8,28 @@ import cn from 'classnames';
 /*--------------------------------------- PROJECT IMPORTS ----------------------------------------*/
 import {MoveInputBox} from './move-input-box/move-input-box';
 
+/*--------------------------------------- TYPE DEFINITIONS ---------------------------------------*/
+interface CoordinatesBarProps {
+    /**
+     * TODO don't make this any type.
+     */
+    submitMove: (arg: any) => any;
+    from: {x: number, y: number};
+    to: {x: number, y: number};
+    changeCoordinateBoxContents: (boxType: 'from' | 'to', axis: 'x' | 'y', value: number) => any;
+}
+
 /*-------------------------------------------- EXPORT --------------------------------------------*/
 /**
  * Render an input box for accepting coordinates relating to a move.
  *
  * @property {Function} props.setInputBoxValue Sets value of one of the coordinate boxes.
- * @property {() => any} props.submitMove Move piece based on the content of the coordinates bar.
+ * @property {(): any} props.submitMove Move piece based on the content of the coordinates bar.
  * @property {{x: number, y: number}} props.from Content of the coordinates bar "from" boxes.
  * @property {{x: number, y: number}} props.to Content of the coordinates bar "to" boxes.
  *
  */
-export class CoordinatesBar extends React.Component {
+export class CoordinatesBar extends React.Component<CoordinatesBarProps> {
     /**
      * Submit the current coordinates in the fields to the submitMove callback.
      */

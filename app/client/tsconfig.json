@@ -31,7 +31,7 @@
         "strictNullChecks": false,
         "downlevelIteration": true,
 
-        "baseUrl": "../",
+        "baseUrl": "../../",
         "paths": {}
         // "types": []
     },
@@ -40,6 +40,8 @@
         "./*.ts",
         "./*.tsx",
         "./**/*.ts",
-        "./**/*.tsx"
+        "./**/*.tsx",
+        "../../typings/*.d.ts",
+        "../../typings/**/*.d.ts"
     ]
 }
