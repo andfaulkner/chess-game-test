@@ -1,0 +1,45 @@
+{
+    "version": "4.3.4",
+
+    "compilerOptions": {
+        "noUnusedLocals": false,
+        "lib": ["ES2018", "dom"],
+        "importHelpers": true,
+
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+
+        "target": "es2020",
+        "outDir": "../../build",
+        "jsx": "react",
+
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        "removeComments": false,
+        "preserveConstEnums": true,
+
+        "sourceMap": true,
+        "allowJs": true,
+        "pretty": true,
+
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "downlevelIteration": true,
+
+        "baseUrl": "../../",
+        "paths": {}
+        // "types": []
+    },
+
+    "include": [
+        "./typescript-basics/*.ts",
+        "./typescript-basics/**/*.ts",
+        "./typescript-basics/*.tsx",
+        "./typescript-basics/**/*.tsx"
+    ]
+}
