@@ -1,23 +1,24 @@
-//----- IMPORTS -----//
-const {path: rootPath} = require('app-root-path');
-const {isDevelopment, isProduction} = require('env-var-helpers');
+/*------------------------------------------- IMPORTS --------------------------------------------*/
+import type {Configuration} from 'webpack'
+import {path as rootPath} from 'app-root-path';
 
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-
-const Fiber = require('fibers');
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
 console.log('path to build:', path.resolve(__dirname, '..', 'build'));
 
-console.log(`path.join(rootPath, 'app/client/tsconfig.json'):`, path.join(rootPath, 'app/client/tsconfig.json'));
+console.log(
+    `path.join(rootPath, 'app/client/tsconfig.json'):`,
+    path.join(rootPath, 'app/client/tsconfig.json')
+);
 
-//----- REUSABLE CONFIG SECTIONS -----/
+/*----------------------------------- REUSABLE CONFIG SECTIONS -----------------------------------*/
 /**
  * Configuration for handling CSS files, including the last stages of SCSS transpilation.
  */
- const cssLoaders = [
+const cssLoaders = [
     {
         loader: MiniCssExtractPlugin.loader,
         options: {
@@ -39,15 +40,15 @@ console.log(`path.join(rootPath, 'app/client/tsconfig.json'):`, path.join(rootPa
     },
 ];
 
-//--- EXPORT ---//
-module.exports = {
+/*-------------------------------------------- EXPORT --------------------------------------------*/
+export default {
     context: path.resolve(__dirname, `..`, `app`, `client`),
 
     entry: {
-        index: path.resolve(__dirname, '..', 'app', 'client', 'index.tsx')
+        index: path.resolve(__dirname, '..', 'app', 'client', 'index.tsx'),
     },
     output: {
-        path: path.resolve(__dirname, '..', 'build')
+        path: path.resolve(__dirname, '..', 'build'),
     },
 
     module: {
@@ -89,20 +90,20 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader']
-            }
-        ]
+                use: ['babel-loader'],
+            },
+        ],
     },
 
     resolve: {
-        extensions: ['*', '.js', '.jsx']
+        extensions: ['*', '.js', '.jsx'],
     },
 
     plugins: [
         new ForkTsCheckerWebpackPlugin(),
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '..', 'app', 'client', 'index.html')
-        })
-    ]
-};
+            template: path.resolve(__dirname, '..', 'app', 'client', 'index.html'),
+        }),
+    ],
+} as Configuration;

@@ -125,3 +125,95 @@ console.log(arrFromSimilarTypes('aswdf', 'qwerty'));
 // console.log(arrFromSimilarTypes('aswdf', 4)); // Blows up
 
 /*----------------------------------------- INTERFACES -------------------------------------------*/
+/**
+ * All "Account" objects in the application must implement this interface.
+ */
+interface AccountBase {
+    funds: number;
+    add: (newFunds: number) => number;
+    remove: (fundsToRemove: number) => number;
+}
+
+/**
+ * First type of account implementing AccountBase
+ */
+class PersonalAccount implements AccountBase {
+    public funds: number = 0;
+
+    public add = (newFunds: number) => {
+        this.funds = this.funds + newFunds;
+        return this.funds;
+    }
+    public remove = (fundsToRemove: number) => {
+        this.funds = this.funds - fundsToRemove;
+        return this.funds;
+    }
+
+    constructor(initialFunds: number) {
+        this.funds = initialFunds;
+        return this;
+    }
+}
+
+const brodiePersonalAccount = new PersonalAccount(100);
+brodiePersonalAccount.add(100);
+console.log(brodiePersonalAccount);
+
+/**
+ * Second type of account implementing AccountBase.
+ */
+class BusinessAccount implements AccountBase {
+    public funds: number = 1000;
+
+    public add = (newFunds: number) => {
+        this.funds = this.funds + newFunds - this.transactionCost;
+        return this.funds;
+    }
+    public remove = (fundsToRemove: number) => {
+        this.funds = this.funds - fundsToRemove - this.transactionCost;
+        return this.funds;
+    }
+
+    constructor(private transactionCost: number, initialFunds?: number) {
+        if (typeof initialFunds === 'number') {
+            this.funds = initialFunds - transactionCost;
+        }
+        return this;
+    }
+}
+
+const brodieIncAccount = new BusinessAccount(0.10);
+
+brodieIncAccount.add(100);
+console.log(brodieIncAccount);
+
+/*------------------- USING INTERFACES IN FUNCTIONS (ETC) --------------------*/
+/**
+ * Move funds from one account of any type to another.
+ */
+const transaction = (buyer: AccountBase, seller: AccountBase, cost: number) => {
+    buyer.remove(cost);
+    seller.add(cost);
+};
+
+const buyerAccount = new PersonalAccount(10000);
+const sellerAccount = new BusinessAccount(0.1, 50000);
+
+transaction(buyerAccount, sellerAccount, 100);
+console.log(buyerAccount);
+
+/*------------------------------------------- IMPORTS --------------------------------------------*/
+import moment from 'moment';
+import type {Moment} from 'moment';
+
+console.log(moment.now());
+console.log(moment(moment.now()).format('YYYY/MM/DD-hh:mm:ss'))
+
+const getNextDay = (date: Moment) => {
+    const newDate = moment(date);
+    newDate.add(24, 'hours');
+    console.log(newDate.format('YYYY/MM/DD-hh:mm:ss'));
+    return newDate;
+};
+
+getNextDay(moment(moment.now()));
