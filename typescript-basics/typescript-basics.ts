@@ -1,9 +1,11 @@
 /*------------------------------------------ PRIMITIVES ------------------------------------------*/
+// Inferred
 const inferredTypeNum = 5;
 
 console.log(inferredTypeNum);
 console.log(inferredTypeNum.toString());
 
+// Non-inferred
 const nonInferredTypeNum: number = 5;
 
 /*--------------------------------------- TYPED PARAMETERS ---------------------------------------*/

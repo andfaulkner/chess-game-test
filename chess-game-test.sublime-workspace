@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"concate",
+				"concatenator2"
+			],
+			[
 				"comment_",
 				"comment_moduleheading"
 			],
@@ -228,1261 +232,20 @@
 	"buffers":
 	[
 		{
-			"file": "docs/design.md",
-			"settings":
-			{
-				"buffer_size": 4700,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					20,
-					1,
-					"insert",
-					{
-						"characters": " ci"
-					},
-					"AwAAABQDAAAAAAAAFQMAAAAAAAAAAAAAFQMAAAAAAAAWAwAAAAAAAAAAAAAWAwAAAAAAABcDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAFAMAAAAAAAAUAwAAAAAAAP///////+9/"
-				],
-				[
-					21,
-					1,
-					"left_delete",
-					null,
-					"AQAAABYDAAAAAAAAFgMAAAAAAAABAAAAaQ",
-					"AQAAAAAAAAABAAAAFwMAAAAAAAAXAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					22,
-					1,
-					"insert",
-					{
-						"characters": "ode"
-					},
-					"AwAAABYDAAAAAAAAFwMAAAAAAAAAAAAAFwMAAAAAAAAYAwAAAAAAAAAAAAAYAwAAAAAAABkDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAFgMAAAAAAAAWAwAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		},
-		{
-			"file": "app/client/index.tsx",
-			"settings":
-			{
-				"buffer_size": 727,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					36,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AQAAAJcAAAAAAAAAmAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAlwAAAAAAAACXAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					38,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AQAAAJcAAAAAAAAAmAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAlwAAAAAAAACXAAAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					39,
-					1,
-					"paste",
-					null,
-					"AQAAAJgAAAAAAAAAnQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAmAAAAAAAAACYAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					66,
-					1,
-					"delete_word",
-					{
-						"forward": false
-					},
-					"AQAAAJgAAAAAAAAAmAAAAAAAAAAFAAAAUmVhY3Q",
-					"AQAAAAAAAAABAAAAnQAAAAAAAACdAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					67,
-					1,
-					"insert_snippet",
-					{
-						"contents": "'$0'"
-					},
-					"AQAAAJgAAAAAAAAAmgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAmAAAAAAAAACYAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					69,
-					1,
-					"insert",
-					{
-						"characters": "."
-					},
-					"AQAAAJoAAAAAAAAAmwAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAmgAAAAAAAACaAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					90,
-					3,
-					"left_delete",
-					null,
-					"AwAAAJoAAAAAAAAAmgAAAAAAAAABAAAALpkAAAAAAAAAmQAAAAAAAAABAAAAJ5gAAAAAAAAAmAAAAAAAAAABAAAAJw",
-					"AQAAAAAAAAABAAAAmwAAAAAAAACbAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					91,
-					1,
-					"insert",
-					{
-						"characters": "4."
-					},
-					"AgAAAJgAAAAAAAAAmQAAAAAAAAAAAAAAmQAAAAAAAACaAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAmAAAAAAAAACYAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					93,
-					2,
-					"left_delete",
-					null,
-					"AgAAAJkAAAAAAAAAmQAAAAAAAAABAAAALpgAAAAAAAAAmAAAAAAAAAABAAAANA",
-					"AQAAAAAAAAABAAAAmgAAAAAAAACaAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					94,
-					1,
-					"insert",
-					{
-						"characters": "const"
-					},
-					"BQAAAJgAAAAAAAAAmQAAAAAAAAAAAAAAmQAAAAAAAACaAAAAAAAAAAAAAACaAAAAAAAAAJsAAAAAAAAAAAAAAJsAAAAAAAAAnAAAAAAAAAAAAAAAnAAAAAAAAACdAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAmAAAAAAAAACYAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					107,
-					1,
-					"delete_word",
-					{
-						"forward": false
-					},
-					"AQAAAJgAAAAAAAAAmAAAAAAAAAAFAAAAY29uc3Q",
-					"AQAAAAAAAAABAAAAnQAAAAAAAACdAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					108,
-					1,
-					"left_delete",
-					null,
-					"AgAAAJcAAAAAAAAAlwAAAAAAAAABAAAACpYAAAAAAAAAlgAAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAAmAAAAAAAAACYAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					122,
-					3,
-					"right_delete",
-					null,
-					"AwAAAAAAAAAAAAAAAAAAAAAAAAABAAAALwAAAAAAAAAAAAAAAAAAAAABAAAALwAAAAAAAAAAAAAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					124,
-					1,
-					"pad",
-					null,
-					"AQAAAAAAAAAAAAAAZAAAAAAAAAATAAAAVGhpcmQtcGFydHkgaW1wb3J0cw",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAATAAAAAAAAAP///////+9/"
-				],
-				[
-					130,
-					1,
-					"insert",
-					{
-						"characters": "\njd"
-					},
-					"AwAAAOUAAAAAAAAA5gAAAAAAAAAAAAAA5gAAAAAAAADnAAAAAAAAAAAAAADnAAAAAAAAAOgAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA5QAAAAAAAADlAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					131,
-					2,
-					"left_delete",
-					null,
-					"AgAAAOcAAAAAAAAA5wAAAAAAAAABAAAAZOYAAAAAAAAA5gAAAAAAAAABAAAAag",
-					"AQAAAAAAAAABAAAA6AAAAAAAAADoAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					132,
-					1,
-					"insert",
-					{
-						"characters": "hde"
-					},
-					"AwAAAOYAAAAAAAAA5wAAAAAAAAAAAAAA5wAAAAAAAADoAAAAAAAAAAAAAADoAAAAAAAAAOkAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA5gAAAAAAAADmAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					133,
-					1,
-					"insert_completion",
-					{
-						"completion": "/*-------------------------------------------- EXPORT --------------------------------------------*/",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "hde"
-					},
-					"AgAAAOYAAAAAAAAA5gAAAAAAAAADAAAAaGRl5gAAAAAAAABKAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA6QAAAAAAAADpAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					141,
-					3,
-					"right_delete",
-					null,
-					"AwAAADYCAAAAAAAANgIAAAAAAAABAAAALzYCAAAAAAAANgIAAAAAAAABAAAALzYCAAAAAAAANgIAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAANgIAAAAAAAA2AgAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					143,
-					1,
-					"pad",
-					null,
-					"AQAAADYCAAAAAAAAmgIAAAAAAAAGAAAAUmVuZGVy",
-					"AQAAAAAAAAABAAAANgIAAAAAAAA8AgAAAAAAAP///////+9/"
-				]
-			]
-		},
-		{
-			"file": "app/client/components/board/board-view.tsx",
-			"settings":
-			{
-				"buffer_size": 6851,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					2,
-					1,
-					"insert",
-					{
-						"characters": "\n,y"
-					},
-					"AwAAALQAAAAAAAAAtQAAAAAAAAAAAAAAtQAAAAAAAAC2AAAAAAAAAAAAAAC2AAAAAAAAALcAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAtAAAAAAAAAC0AAAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					3,
-					2,
-					"left_delete",
-					null,
-					"AgAAALYAAAAAAAAAtgAAAAAAAAABAAAAebUAAAAAAAAAtQAAAAAAAAABAAAALA",
-					"AQAAAAAAAAABAAAAtwAAAAAAAAC3AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					4,
-					1,
-					"insert",
-					{
-						"characters": "my"
-					},
-					"AgAAALUAAAAAAAAAtgAAAAAAAAAAAAAAtgAAAAAAAAC3AAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAtQAAAAAAAAC1AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					5,
-					1,
-					"insert_completion",
-					{
-						"completion": "lsp_select_completion_item {\"item\":{\"commitCharacters\":[\".\",\",\",\"(\"],\"data\":{\"file\":\"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board/board-view.tsx\",\"entryNames\":[\"myMagicalImport\"],\"line\":5,\"offset\":2},\"label\":\"myMagicalImport\",\"kind\":6,\"sortText\":\"1\"},\"session_name\":\"LSP-typescript\"}",
-						"format": "command",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "myMagicalImport"
-					},
-					"AgAAALUAAAAAAAAAtQAAAAAAAAACAAAAbXm1AAAAAAAAAMQAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAtwAAAAAAAAC3AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					6,
-					1,
-					"insert",
-					{
-						"characters": "."
-					},
-					"AQAAAMQAAAAAAAAAxQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAxAAAAAAAAADEAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					9,
-					1,
-					"left_delete",
-					null,
-					"AQAAAMQAAAAAAAAAxAAAAAAAAAABAAAALg",
-					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					10,
-					1,
-					"insert",
-					{
-						"characters": "."
-					},
-					"AQAAAMQAAAAAAAAAxQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAxAAAAAAAAADEAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					11,
-					1,
-					"left_delete",
-					null,
-					"AQAAAMQAAAAAAAAAxAAAAAAAAAABAAAALg",
-					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					12,
-					1,
-					"delete_word",
-					{
-						"forward": false
-					},
-					"AQAAALUAAAAAAAAAtQAAAAAAAAAPAAAAbXlNYWdpY2FsSW1wb3J0",
-					"AQAAAAAAAAABAAAAxAAAAAAAAADEAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					13,
-					2,
-					"left_delete",
-					null,
-					"AgAAALQAAAAAAAAAtAAAAAAAAAABAAAACrMAAAAAAAAAswAAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAAtQAAAAAAAAC1AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					16,
-					1,
-					"cut",
-					null,
-					"AQAAAIMAAAAAAAAAgwAAAAAAAAAxAAAAaW1wb3J0IG15TWFnaWNhbEltcG9ydCBmcm9tICdteS1tYWdpY2FsLWltcG9ydCc7Cg",
-					"AQAAAAAAAAABAAAAswAAAAAAAACzAAAAAAAAAP///////+9/"
-				],
-				[
-					21,
-					1,
-					"cut",
-					null,
-					"AQAAACEBAAAAAAAAIQEAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAAIQEAAAAAAAAhAQAAAAAAAAAAAAAAAAAA"
-				]
-			]
-		},
-		{
-			"file": "app/client/components/board/board-container.tsx",
-			"settings":
-			{
-				"buffer_size": 8419,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					17,
-					1,
-					"insert_snippet",
-					{
-						"contents": "(${0:$SELECTION})"
-					},
-					"AgAAACYSAAAAAAAAJhIAAAAAAAAKAAAAbW92ZVZhbHVlcyYSAAAAAAAAMhIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAMBIAAAAAAAAmEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					19,
-					1,
-					"insert",
-					{
-						"characters": ":"
-					},
-					"AQAAADESAAAAAAAAMhIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAMRIAAAAAAAAxEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					20,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAADISAAAAAAAAMxIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAMhIAAAAAAAAyEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					21,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAADMSAAAAAAAANRIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAMxIAAAAAAAAzEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					22,
-					1,
-					"insert",
-					{
-						"characters": "from:"
-					},
-					"BQAAADQSAAAAAAAANRIAAAAAAAAAAAAANRIAAAAAAAA2EgAAAAAAAAAAAAA2EgAAAAAAADcSAAAAAAAAAAAAADcSAAAAAAAAOBIAAAAAAAAAAAAAOBIAAAAAAAA5EgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAANBIAAAAAAAA0EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					23,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAADkSAAAAAAAAOhIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAORIAAAAAAAA5EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					24,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAADoSAAAAAAAAPBIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAOhIAAAAAAAA6EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					25,
-					1,
-					"insert",
-					{
-						"characters": "x,"
-					},
-					"AgAAADsSAAAAAAAAPBIAAAAAAAAAAAAAPBIAAAAAAAA9EgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAOxIAAAAAAAA7EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					26,
-					1,
-					"insert",
-					{
-						"characters": " y"
-					},
-					"AgAAAD0SAAAAAAAAPhIAAAAAAAAAAAAAPhIAAAAAAAA/EgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAPRIAAAAAAAA9EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					29,
-					1,
-					"insert",
-					{
-						"characters": "\""
-					},
-					"AQAAADwSAAAAAAAAPRIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAPBIAAAAAAAA8EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					30,
-					1,
-					"left_delete",
-					null,
-					"AQAAADwSAAAAAAAAPBIAAAAAAAABAAAAIg",
-					"AQAAAAAAAAABAAAAPRIAAAAAAAA9EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					31,
-					1,
-					"insert",
-					{
-						"characters": ":"
-					},
-					"AQAAADwSAAAAAAAAPRIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAPBIAAAAAAAA8EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					32,
-					1,
-					"insert",
-					{
-						"characters": " number"
-					},
-					"BwAAAD0SAAAAAAAAPhIAAAAAAAAAAAAAPhIAAAAAAAA/EgAAAAAAAAAAAAA/EgAAAAAAAEASAAAAAAAAAAAAAEASAAAAAAAAQRIAAAAAAAAAAAAAQRIAAAAAAABCEgAAAAAAAAAAAABCEgAAAAAAAEMSAAAAAAAAAAAAAEMSAAAAAAAARBIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAPRIAAAAAAAA9EgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					35,
-					1,
-					"insert",
-					{
-						"characters": ":"
-					},
-					"AQAAAEcSAAAAAAAASBIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAARxIAAAAAAABHEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					36,
-					1,
-					"insert",
-					{
-						"characters": " number"
-					},
-					"BwAAAEgSAAAAAAAASRIAAAAAAAAAAAAASRIAAAAAAABKEgAAAAAAAAAAAABKEgAAAAAAAEsSAAAAAAAAAAAAAEsSAAAAAAAATBIAAAAAAAAAAAAATBIAAAAAAABNEgAAAAAAAAAAAABNEgAAAAAAAE4SAAAAAAAAAAAAAE4SAAAAAAAATxIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAASBIAAAAAAABIEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					38,
-					1,
-					"insert",
-					{
-						"characters": ",m"
-					},
-					"AgAAAFASAAAAAAAAURIAAAAAAAAAAAAAURIAAAAAAABSEgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAUBIAAAAAAABQEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					39,
-					1,
-					"left_delete",
-					null,
-					"AQAAAFESAAAAAAAAURIAAAAAAAABAAAAbQ",
-					"AQAAAAAAAAABAAAAUhIAAAAAAABSEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					40,
-					1,
-					"insert",
-					{
-						"characters": " tp"
-					},
-					"AwAAAFESAAAAAAAAUhIAAAAAAAAAAAAAUhIAAAAAAABTEgAAAAAAAAAAAABTEgAAAAAAAFQSAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAURIAAAAAAABREgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					41,
-					1,
-					"left_delete",
-					null,
-					"AQAAAFMSAAAAAAAAUxIAAAAAAAABAAAAcA",
-					"AQAAAAAAAAABAAAAVBIAAAAAAABUEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					42,
-					1,
-					"insert",
-					{
-						"characters": "o:"
-					},
-					"AgAAAFMSAAAAAAAAVBIAAAAAAAAAAAAAVBIAAAAAAABVEgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAUxIAAAAAAABTEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					43,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAFUSAAAAAAAAVhIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAVRIAAAAAAABVEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					44,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAAFYSAAAAAAAAWBIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAVhIAAAAAAABWEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					45,
-					1,
-					"insert",
-					{
-						"characters": "x:"
-					},
-					"AgAAAFcSAAAAAAAAWBIAAAAAAAAAAAAAWBIAAAAAAABZEgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAVxIAAAAAAABXEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					46,
-					1,
-					"insert",
-					{
-						"characters": " number,"
-					},
-					"CAAAAFkSAAAAAAAAWhIAAAAAAAAAAAAAWhIAAAAAAABbEgAAAAAAAAAAAABbEgAAAAAAAFwSAAAAAAAAAAAAAFwSAAAAAAAAXRIAAAAAAAAAAAAAXRIAAAAAAABeEgAAAAAAAAAAAABeEgAAAAAAAF8SAAAAAAAAAAAAAF8SAAAAAAAAYBIAAAAAAAAAAAAAYBIAAAAAAABhEgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAWRIAAAAAAABZEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					47,
-					1,
-					"insert",
-					{
-						"characters": " y:"
-					},
-					"AwAAAGESAAAAAAAAYhIAAAAAAAAAAAAAYhIAAAAAAABjEgAAAAAAAAAAAABjEgAAAAAAAGQSAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAYRIAAAAAAABhEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					48,
-					1,
-					"insert",
-					{
-						"characters": " number"
-					},
-					"BwAAAGQSAAAAAAAAZRIAAAAAAAAAAAAAZRIAAAAAAABmEgAAAAAAAAAAAABmEgAAAAAAAGcSAAAAAAAAAAAAAGcSAAAAAAAAaBIAAAAAAAAAAAAAaBIAAAAAAABpEgAAAAAAAAAAAABpEgAAAAAAAGoSAAAAAAAAAAAAAGoSAAAAAAAAaxIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZBIAAAAAAABkEgAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		},
-		{
-			"contents": "\n/*-------------------------------------------- ASSETS --------------------------------------------*/\nimport s from './coordinates-bar.scss';\n\n/*------------------------------------- THIRD-PARTY IMPORTS --------------------------------------*/\nimport React from 'react';\nimport cn from 'classnames';\n\n/*--------------------------------------- PROJECT IMPORTS ----------------------------------------*/\nimport {MoveInputBox} from './move-input-box/move-input-box';\n\n/*--------------------------------------- TYPE DEFINITIONS ---------------------------------------*/\ninterface CoordinatesBarProps {\n    submitMove: \n}\n\n/*-------------------------------------------- EXPORT --------------------------------------------*/\n/**\n * Render an input box for accepting coordinates relating to a move.\n *\n * @property {Function} props.setInputBoxValue Sets value of one of the coordinate boxes.\n * @property {(): any} props.submitMove Move piece based on the content of the coordinates bar.\n * @property {{x: number, y: number}} props.from Content of the coordinates bar \"from\" boxes.\n * @property {{x: number, y: number}} props.to Content of the coordinates bar \"to\" boxes.\n *\n */\nexport class CoordinatesBar extends React.Component<> {\n    /**\n     * Submit the current coordinates in the fields to the submitMove callback.\n     */\n    submitMove = () => {\n        this.props.submitMove(this.state);\n        console.log('submitMove (CoordinateBar) :: this.state:', this.state);\n    };\n\n    render() {\n        return (\n            <div\n                style={{\n                    display: `flex`,\n                    flexDirection: 'row',\n                    justifyContent: 'space-between',\n                    width: '100%',\n                    marginTop: 8,\n                }}\n            >\n                <MoveInputBox\n                    id=\"move-input-box--from\"\n                    label=\"From\"\n                    onChangeX={value => this.props.changeCoordinateBoxContents('from', 'x', value)}\n                    onChangeY={value => this.props.changeCoordinateBoxContents('from', 'y', value)}\n                    value={this.props.from}\n                />\n                <MoveInputBox\n                    id=\"move-input-box--to\"\n                    label=\"To\"\n                    onChangeX={value => this.props.changeCoordinateBoxContents('to', 'x', value)}\n                    onChangeY={value => this.props.changeCoordinateBoxContents('to', 'y', value)}\n                    value={this.props.to}\n                />\n                <button type=\"submit\" onClick={this.submitMove}>\n                    Submit\n                </button>\n            </div>\n        );\n    }\n}\n",
-			"file": "app/client/components/coordinates-bar/coordinates-bar.tsx",
-			"file_size": 2521,
-			"file_write_time": 132827196011697218,
-			"settings":
-			{
-				"buffer_size": 2676,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					12,
-					2,
-					"left_delete",
-					null,
-					"AgAAAO0CAAAAAAAA7QIAAAAAAAADAAAAPT4g7AIAAAAAAADsAgAAAAAAAAEAAAAg",
-					"AQAAAAAAAAABAAAA8AIAAAAAAADtAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					13,
-					1,
-					"insert",
-					{
-						"characters": ":"
-					},
-					"AQAAAOwCAAAAAAAA7QIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA7AIAAAAAAADsAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					14,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAO0CAAAAAAAA7gIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA7QIAAAAAAADtAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					21,
-					1,
-					"insert",
-					{
-						"characters": ">?"
-					},
-					"AgAAAC4EAAAAAAAALwQAAAAAAAAAAAAALwQAAAAAAAAwBAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAALgQAAAAAAAAuBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					22,
-					2,
-					"left_delete",
-					null,
-					"AgAAAC8EAAAAAAAALwQAAAAAAAABAAAAPy4EAAAAAAAALgQAAAAAAAABAAAAPg",
-					"AQAAAAAAAAABAAAAMAQAAAAAAAAwBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					23,
-					1,
-					"insert",
-					{
-						"characters": "<>"
-					},
-					"AgAAAC4EAAAAAAAALwQAAAAAAAAAAAAALwQAAAAAAAAwBAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAALgQAAAAAAAAuBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					27,
-					1,
-					"insert",
-					{
-						"characters": "\n\n"
-					},
-					"AgAAANABAAAAAAAA0QEAAAAAAAAAAAAA0QEAAAAAAADSAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA0AEAAAAAAADQAQAAAAAAAAAAAAAA4INA"
-				],
-				[
-					29,
-					1,
-					"insert",
-					{
-						"characters": "hj"
-					},
-					"AgAAANEBAAAAAAAA0gEAAAAAAAAAAAAA0gEAAAAAAADTAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA0QEAAAAAAADRAQAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					30,
-					1,
-					"left_delete",
-					null,
-					"AQAAANIBAAAAAAAA0gEAAAAAAAABAAAAag",
-					"AQAAAAAAAAABAAAA0wEAAAAAAADTAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					31,
-					1,
-					"insert",
-					{
-						"characters": "dtd"
-					},
-					"AwAAANIBAAAAAAAA0wEAAAAAAAAAAAAA0wEAAAAAAADUAQAAAAAAAAAAAADUAQAAAAAAANUBAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA0gEAAAAAAADSAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					33,
-					1,
-					"left_delete",
-					null,
-					"AQAAANQBAAAAAAAA1AEAAAAAAAABAAAAZA",
-					"AQAAAAAAAAABAAAA1QEAAAAAAADVAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					34,
-					1,
-					"insert",
-					{
-						"characters": "sd"
-					},
-					"AgAAANQBAAAAAAAA1QEAAAAAAAAAAAAA1QEAAAAAAADWAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA1AEAAAAAAADUAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					35,
-					1,
-					"insert_completion",
-					{
-						"completion": "/*--------------------------------------- TYPE DEFINITIONS ---------------------------------------*/",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "hdtdefs"
-					},
-					"AgAAANEBAAAAAAAA0QEAAAAAAAAFAAAAaGR0c2TRAQAAAAAAADUCAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA1gEAAAAAAADWAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					36,
-					1,
-					"insert",
-					{
-						"characters": "\ninterface"
-					},
-					"CgAAADUCAAAAAAAANgIAAAAAAAAAAAAANgIAAAAAAAA3AgAAAAAAAAAAAAA3AgAAAAAAADgCAAAAAAAAAAAAADgCAAAAAAAAOQIAAAAAAAAAAAAAOQIAAAAAAAA6AgAAAAAAAAAAAAA6AgAAAAAAADsCAAAAAAAAAAAAADsCAAAAAAAAPAIAAAAAAAAAAAAAPAIAAAAAAAA9AgAAAAAAAAAAAAA9AgAAAAAAAD4CAAAAAAAAAAAAAD4CAAAAAAAAPwIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAANQIAAAAAAAA1AgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					37,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAD8CAAAAAAAAQAIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAPwIAAAAAAAA/AgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					38,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAAEACAAAAAAAAQgIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAQAIAAAAAAABAAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					39,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Delete Left Right.sublime-macro"
-					},
-					"AgAAAEACAAAAAAAAQAIAAAAAAAABAAAAe0ACAAAAAAAAQAIAAAAAAAABAAAAfQ",
-					"AQAAAAAAAAABAAAAQQIAAAAAAABBAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					40,
-					1,
-					"insert",
-					{
-						"characters": "CoordinatesP"
-					},
-					"DAAAAEACAAAAAAAAQQIAAAAAAAAAAAAAQQIAAAAAAABCAgAAAAAAAAAAAABCAgAAAAAAAEMCAAAAAAAAAAAAAEMCAAAAAAAARAIAAAAAAAAAAAAARAIAAAAAAABFAgAAAAAAAAAAAABFAgAAAAAAAEYCAAAAAAAAAAAAAEYCAAAAAAAARwIAAAAAAAAAAAAARwIAAAAAAABIAgAAAAAAAAAAAABIAgAAAAAAAEkCAAAAAAAAAAAAAEkCAAAAAAAASgIAAAAAAAAAAAAASgIAAAAAAABLAgAAAAAAAAAAAABLAgAAAAAAAEwCAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAQAIAAAAAAABAAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					41,
-					1,
-					"left_delete",
-					null,
-					"AQAAAEsCAAAAAAAASwIAAAAAAAABAAAAUA",
-					"AQAAAAAAAAABAAAATAIAAAAAAABMAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					42,
-					1,
-					"insert",
-					{
-						"characters": "BarProps"
-					},
-					"CAAAAEsCAAAAAAAATAIAAAAAAAAAAAAATAIAAAAAAABNAgAAAAAAAAAAAABNAgAAAAAAAE4CAAAAAAAAAAAAAE4CAAAAAAAATwIAAAAAAAAAAAAATwIAAAAAAABQAgAAAAAAAAAAAABQAgAAAAAAAFECAAAAAAAAAAAAAFECAAAAAAAAUgIAAAAAAAAAAAAAUgIAAAAAAABTAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAASwIAAAAAAABLAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					43,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAFMCAAAAAAAAVAIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAUwIAAAAAAABTAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					44,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAAFQCAAAAAAAAVgIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAVAIAAAAAAABUAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					45,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
-					},
-					"AwAAAFUCAAAAAAAAVgIAAAAAAAAAAAAAVgIAAAAAAABXAgAAAAAAAAAAAABWAgAAAAAAAFoCAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAVQIAAAAAAABVAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					46,
-					1,
-					"insert",
-					{
-						"characters": "submitMove:"
-					},
-					"CwAAAFoCAAAAAAAAWwIAAAAAAAAAAAAAWwIAAAAAAABcAgAAAAAAAAAAAABcAgAAAAAAAF0CAAAAAAAAAAAAAF0CAAAAAAAAXgIAAAAAAAAAAAAAXgIAAAAAAABfAgAAAAAAAAAAAABfAgAAAAAAAGACAAAAAAAAAAAAAGACAAAAAAAAYQIAAAAAAAAAAAAAYQIAAAAAAABiAgAAAAAAAAAAAABiAgAAAAAAAGMCAAAAAAAAAAAAAGMCAAAAAAAAZAIAAAAAAAAAAAAAZAIAAAAAAABlAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAWgIAAAAAAABaAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					47,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAGUCAAAAAAAAZgIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZQIAAAAAAABlAgAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		},
-		{
-			"file": "app/client/tsconfig.json",
-			"settings":
-			{
-				"buffer_size": 1027,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					3,
-					1,
-					"insert",
-					{
-						"characters": "."
-					},
-					"AQAAALcDAAAAAAAAuAMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAtwMAAAAAAAC3AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					4,
-					1,
-					"left_delete",
-					null,
-					"AQAAALcDAAAAAAAAtwMAAAAAAAABAAAALg",
-					"AQAAAAAAAAABAAAAuAMAAAAAAAC4AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					5,
-					1,
-					"insert",
-					{
-						"characters": ","
-					},
-					"AQAAALcDAAAAAAAAuAMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAtwMAAAAAAAC3AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					6,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AgAAALgDAAAAAAAAuQMAAAAAAAAAAAAAuQMAAAAAAADBAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAuAMAAAAAAAC4AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					7,
-					1,
-					"insert_snippet",
-					{
-						"contents": "\"$0\""
-					},
-					"AQAAAMEDAAAAAAAAwwMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAwQMAAAAAAADBAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					8,
-					1,
-					"insert",
-					{
-						"characters": "../../"
-					},
-					"BgAAAMIDAAAAAAAAwwMAAAAAAAAAAAAAwwMAAAAAAADEAwAAAAAAAAAAAADEAwAAAAAAAMUDAAAAAAAAAAAAAMUDAAAAAAAAxgMAAAAAAAAAAAAAxgMAAAAAAADHAwAAAAAAAAAAAADHAwAAAAAAAMgDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAwgMAAAAAAADCAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					9,
-					1,
-					"insert",
-					{
-						"characters": "typin"
-					},
-					"BQAAAMgDAAAAAAAAyQMAAAAAAAAAAAAAyQMAAAAAAADKAwAAAAAAAAAAAADKAwAAAAAAAMsDAAAAAAAAAAAAAMsDAAAAAAAAzAMAAAAAAAAAAAAAzAMAAAAAAADNAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAyAMAAAAAAADIAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					10,
-					1,
-					"insert_completion",
-					{
-						"completion": "typings/",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "typings/"
-					},
-					"AgAAAMgDAAAAAAAAyAMAAAAAAAAFAAAAdHlwaW7IAwAAAAAAANADAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAzQMAAAAAAADNAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					11,
-					1,
-					"insert_completion",
-					{
-						"completion": "allow-static-asset-imports.d.ts",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": true,
-						"trigger": "allow-static-asset-imports.d.ts"
-					},
-					"AQAAANADAAAAAAAA7wMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA0AMAAAAAAADQAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					18,
-					1,
-					"insert",
-					{
-						"characters": "*.d.ts"
-					},
-					"BwAAANADAAAAAAAA0QMAAAAAAAAAAAAA0QMAAAAAAADRAwAAAAAAAB8AAABhbGxvdy1zdGF0aWMtYXNzZXQtaW1wb3J0cy5kLnRz0QMAAAAAAADSAwAAAAAAAAAAAADSAwAAAAAAANMDAAAAAAAAAAAAANMDAAAAAAAA1AMAAAAAAAAAAAAA1AMAAAAAAADVAwAAAAAAAAAAAADVAwAAAAAAANYDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA7wMAAAAAAADQAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					20,
-					1,
-					"insert",
-					{
-						"characters": ","
-					},
-					"AQAAANcDAAAAAAAA2AMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA1wMAAAAAAADXAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					22,
-					1,
-					"paste",
-					null,
-					"AQAAALkDAAAAAAAA2QMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA2AMAAAAAAADYAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					26,
-					1,
-					"insert",
-					{
-						"characters": "*"
-					},
-					"AQAAAPADAAAAAAAA8QMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA8AMAAAAAAADwAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					29,
-					1,
-					"insert",
-					{
-						"characters": "/*"
-					},
-					"AgAAAPIDAAAAAAAA8wMAAAAAAAAAAAAA8wMAAAAAAAD0AwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA8gMAAAAAAADyAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					31,
-					1,
-					"left_delete",
-					null,
-					"AQAAAPoDAAAAAAAA+gMAAAAAAAABAAAALA",
-					"AQAAAAAAAAABAAAA+wMAAAAAAAD7AwAAAAAAAP///////+9/"
-				],
-				[
-					34,
-					1,
-					"jsoncomma_fix",
-					{
-						"ranges":
-						[
-							[
-								0,
-								1027
-							]
-						]
-					},
-					"AQAAAAAAAAAAAAAAAwQAAAAAAAADBAAAewogICAgInZlcnNpb24iOiAiNC4zLjQiLAoKICAgICJjb21waWxlck9wdGlvbnMiOiB7CiAgICAgICAgIm5vVW51c2VkTG9jYWxzIjogZmFsc2UsCiAgICAgICAgImxpYiI6IFsiRVMyMDE4IiwgImRvbSJdLAogICAgICAgICJpbXBvcnRIZWxwZXJzIjogdHJ1ZSwKCiAgICAgICAgIm1vZHVsZSI6ICJjb21tb25qcyIsCiAgICAgICAgIm1vZHVsZVJlc29sdXRpb24iOiAibm9kZSIsCiAgICAgICAgInJlc29sdmVKc29uTW9kdWxlIjogdHJ1ZSwKCiAgICAgICAgInRhcmdldCI6ICJlczIwMjAiLAogICAgICAgICJvdXREaXIiOiAiLi4vLi4vYnVpbGQiLAogICAgICAgICJqc3giOiAicmVhY3QiLAoKICAgICAgICAiYWxsb3dTeW50aGV0aWNEZWZhdWx0SW1wb3J0cyI6IHRydWUsCiAgICAgICAgImVzTW9kdWxlSW50ZXJvcCI6IHRydWUsCiAgICAgICAgImV4cGVyaW1lbnRhbERlY29yYXRvcnMiOiB0cnVlLAogICAgICAgICJlbWl0RGVjb3JhdG9yTWV0YWRhdGEiOiB0cnVlLAoKICAgICAgICAicmVtb3ZlQ29tbWVudHMiOiBmYWxzZSwKICAgICAgICAicHJlc2VydmVDb25zdEVudW1zIjogdHJ1ZSwKCiAgICAgICAgInNvdXJjZU1hcCI6IHRydWUsCiAgICAgICAgImFsbG93SnMiOiB0cnVlLAogICAgICAgICJwcmV0dHkiOiB0cnVlLAoKICAgICAgICAibm9JbXBsaWNpdEFueSI6IGZhbHNlLAogICAgICAgICJza2lwTGliQ2hlY2siOiB0cnVlLAogICAgICAgICJzdHJpY3ROdWxsQ2hlY2tzIjogZmFsc2UsCiAgICAgICAgImRvd25sZXZlbEl0ZXJhdGlvbiI6IHRydWUsCgogICAgICAgICJiYXNlVXJsIjogIi4uLyIsCiAgICAgICAgInBhdGhzIjoge30KICAgICAgICAvLyAidHlwZXMiOiBbXQogICAgfSwKCiAgICAiaW5jbHVkZSI6IFsKICAgICAgICAiLi8qLnRzIiwKICAgICAgICAiLi8qLnRzeCIsCiAgICAgICAgIi4vKiovKi50cyIsCiAgICAgICAgIi4vKiovKi50c3giLAogICAgICAgICIuLi8uLi90eXBpbmdzLyouZC50cyIsCiAgICAgICAgIi4uLy4uL3R5cGluZ3MvKiovKi5kLnRzIgogICAgXQp9Cg",
-					"AQAAAAAAAAABAAAA+gMAAAAAAAD6AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					38,
-					1,
-					"jsoncomma_fix",
-					{
-						"ranges":
-						[
-							[
-								0,
-								1027
-							]
-						]
-					},
-					"AQAAAAAAAAAAAAAAAwQAAAAAAAADBAAAewogICAgInZlcnNpb24iOiAiNC4zLjQiLAoKICAgICJjb21waWxlck9wdGlvbnMiOiB7CiAgICAgICAgIm5vVW51c2VkTG9jYWxzIjogZmFsc2UsCiAgICAgICAgImxpYiI6IFsiRVMyMDE4IiwgImRvbSJdLAogICAgICAgICJpbXBvcnRIZWxwZXJzIjogdHJ1ZSwKCiAgICAgICAgIm1vZHVsZSI6ICJjb21tb25qcyIsCiAgICAgICAgIm1vZHVsZVJlc29sdXRpb24iOiAibm9kZSIsCiAgICAgICAgInJlc29sdmVKc29uTW9kdWxlIjogdHJ1ZSwKCiAgICAgICAgInRhcmdldCI6ICJlczIwMjAiLAogICAgICAgICJvdXREaXIiOiAiLi4vLi4vYnVpbGQiLAogICAgICAgICJqc3giOiAicmVhY3QiLAoKICAgICAgICAiYWxsb3dTeW50aGV0aWNEZWZhdWx0SW1wb3J0cyI6IHRydWUsCiAgICAgICAgImVzTW9kdWxlSW50ZXJvcCI6IHRydWUsCiAgICAgICAgImV4cGVyaW1lbnRhbERlY29yYXRvcnMiOiB0cnVlLAogICAgICAgICJlbWl0RGVjb3JhdG9yTWV0YWRhdGEiOiB0cnVlLAoKICAgICAgICAicmVtb3ZlQ29tbWVudHMiOiBmYWxzZSwKICAgICAgICAicHJlc2VydmVDb25zdEVudW1zIjogdHJ1ZSwKCiAgICAgICAgInNvdXJjZU1hcCI6IHRydWUsCiAgICAgICAgImFsbG93SnMiOiB0cnVlLAogICAgICAgICJwcmV0dHkiOiB0cnVlLAoKICAgICAgICAibm9JbXBsaWNpdEFueSI6IGZhbHNlLAogICAgICAgICJza2lwTGliQ2hlY2siOiB0cnVlLAogICAgICAgICJzdHJpY3ROdWxsQ2hlY2tzIjogZmFsc2UsCiAgICAgICAgImRvd25sZXZlbEl0ZXJhdGlvbiI6IHRydWUsCgogICAgICAgICJiYXNlVXJsIjogIi4uLyIsCiAgICAgICAgInBhdGhzIjoge30KICAgICAgICAvLyAidHlwZXMiOiBbXQogICAgfSwKCiAgICAiaW5jbHVkZSI6IFsKICAgICAgICAiLi8qLnRzIiwKICAgICAgICAiLi8qLnRzeCIsCiAgICAgICAgIi4vKiovKi50cyIsCiAgICAgICAgIi4vKiovKi50c3giLAogICAgICAgICIuLi8uLi90eXBpbmdzLyouZC50cyIsCiAgICAgICAgIi4uLy4uL3R5cGluZ3MvKiovKi5kLnRzIgogICAgXQp9Cg",
-					"AQAAAAAAAAABAAAA+gMAAAAAAAD6AwAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		},
-		{
-			"file": "typings/allow-static-asset-imports.d.ts",
-			"redo_stack":
-			[
-				[
-					66,
-					1,
-					"insert",
-					{
-						"characters": "ct"
-					},
-					"AgAAABQAAAAAAAAAFAAAAAAAAAABAAAAdBMAAAAAAAAAEwAAAAAAAAABAAAAYw",
-					"AQAAAAAAAAABAAAAFQAAAAAAAAAVAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					65,
-					1,
-					"left_delete",
-					null,
-					"AQAAABMAAAAAAAAAFAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAEwAAAAAAAAATAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					64,
-					1,
-					"insert",
-					{
-						"characters": "reas"
-					},
-					"BQAAABMAAAAAAAAAEwAAAAAAAAABAAAAcxIAAAAAAAAAEgAAAAAAAAABAAAAYREAAAAAAAAAEQAAAAAAAAABAAAAZREAAAAAAAAAIgAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAEAAABy",
-					"AQAAAAAAAAABAAAAFAAAAAAAAAAUAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					55,
-					1,
-					"insert",
-					{
-						"characters": "string"
-					},
-					"BwAAADsAAAAAAAAAOwAAAAAAAAABAAAAZzoAAAAAAAAAOgAAAAAAAAABAAAAbjkAAAAAAAAAOQAAAAAAAAABAAAAaTgAAAAAAAAAOAAAAAAAAAABAAAAcjcAAAAAAAAANwAAAAAAAAABAAAAdDcAAAAAAAAAPQAAAAAAAAAAAAAANgAAAAAAAAA2AAAAAAAAAAEAAABz",
-					"AQAAAAAAAAABAAAAPAAAAAAAAAA8AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					48,
-					1,
-					"insert",
-					{
-						"characters": "number"
-					},
-					"BwAAADsAAAAAAAAAOwAAAAAAAAABAAAAcjoAAAAAAAAAOgAAAAAAAAABAAAAZTkAAAAAAAAAOQAAAAAAAAABAAAAYjgAAAAAAAAAOAAAAAAAAAABAAAAbTcAAAAAAAAANwAAAAAAAAABAAAAdTcAAAAAAAAAOgAAAAAAAAAAAAAANgAAAAAAAAA2AAAAAAAAAAEAAABu",
-					"AQAAAAAAAAABAAAAPAAAAAAAAAA8AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					33,
-					1,
-					"insert",
-					{
-						"characters": "t"
-					},
-					"AQAAACAAAAAAAAAAIAAAAAAAAAABAAAAdA",
-					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					32,
-					1,
-					"insert",
-					{
-						"characters": "my-magical-impor"
-					},
-					"EQAAAB8AAAAAAAAAHwAAAAAAAAABAAAAch4AAAAAAAAAHgAAAAAAAAABAAAAbx0AAAAAAAAAHQAAAAAAAAABAAAAcBwAAAAAAAAAHAAAAAAAAAABAAAAbRsAAAAAAAAAGwAAAAAAAAABAAAAaRoAAAAAAAAAGgAAAAAAAAABAAAALRkAAAAAAAAAGQAAAAAAAAABAAAAbBgAAAAAAAAAGAAAAAAAAAABAAAAYRcAAAAAAAAAFwAAAAAAAAABAAAAYxYAAAAAAAAAFgAAAAAAAAABAAAAaRUAAAAAAAAAFQAAAAAAAAABAAAAZxQAAAAAAAAAFAAAAAAAAAABAAAAYRMAAAAAAAAAEwAAAAAAAAABAAAAbRIAAAAAAAAAEgAAAAAAAAABAAAALREAAAAAAAAAEQAAAAAAAAABAAAAeREAAAAAAAAAFgAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAEAAABt",
-					"AQAAAAAAAAABAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					24,
-					1,
-					"left_delete",
-					null,
-					"AQAAAEoAAAAAAAAASwAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAASgAAAAAAAABKAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					23,
-					1,
-					"paste",
-					null,
-					"AQAAAAAAAAAAAAAAAAAAAAAAAABLAAAAZGVjbGFyZSBtb2R1bGUgJyouY3NzJyB7CiAgICBjb25zdCB2YWx1ZTogYW55OwogICAgZXhwb3J0IGRlZmF1bHQgdmFsdWU7Cn0K",
-					"AQAAAAAAAAABAAAASwAAAAAAAABLAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					21,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					19,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
-				]
-			],
-			"settings":
-			{
-				"buffer_size": 1068,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
-		},
-		{
 			"file": "README.md",
-			"redo_stack":
-			[
-				[
-					138,
-					1,
-					"cut",
-					null,
-					"AQAAADMAAAAAAAAA0AEAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAMwAAAAAAAAAzAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					125,
-					1,
-					"left_delete",
-					null,
-					"AQAAAMsBAAAAAAAAzAEAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAywEAAAAAAADLAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					116,
-					1,
-					"left_delete",
-					null,
-					"AQAAAEMBAAAAAAAARAEAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAQwEAAAAAAABDAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					112,
-					1,
-					"left_delete",
-					null,
-					"AQAAALsAAAAAAAAAvAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAuwAAAAAAAAC7AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					102,
-					1,
-					"paste",
-					null,
-					"AQAAADMAAAAAAAAAMwAAAAAAAACgAQAAc3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCQVFDaG5tNVgvRTJXYko1dFNEVllmS3A1MjFkd01wR1ozYWdzTDhETHJrK2JvTm1LV05TaHZjb2lTRngxTkJKb3ZZaHUxYWhQOVp5M2V2ZmYwQjBEQks1Ny81a00valRqV3ZQRgp2c1UvRkZnNGRKbUk3b1FVTEs1ZDRqS1NxSzB1MytKenBOdkpzZVR3eTVVelBITEYrRzJxS0lMSmhFcW9mby91N0dWZXl4QXYyK1I4bURxdlFOWU5DWGtkRGhmYWdxb1ptOEVacXUxNmx1RGxKQTBqUmFwaFFMa2VFVVlJWG5ISnJmYVNpTkszCllyazR1WnFYT1Z6SmFNZGJTWGtiMzVhR014eG1EUjlLbnhlZ2FpRnVqVVBTMTlGeFc3K1JmWFJyYmRlVytPaTd5QXFzRjYvZnZnKyt1WlJQdzlQcWE0U1B3dDk5eW1JTFFIYndXQjJURnR3biBhbmRyZXdAQW5kcmV3cy1NYWNCb29rLVByby4KbG9jYWw",
-					"AQAAAAAAAAABAAAA0wEAAAAAAADTAQAAAAAAAAAAAAAAAPC/"
-				]
-			],
 			"settings":
 			{
 				"buffer_size": 51,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
+			}
+		},
+		{
+			"file": "typescript-basics/typescript-basics.ts",
+			"settings":
+			{
+				"buffer_size": 4606,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -2009,22 +772,27 @@
 		"/home/afaulkner/projects/teaching-coding/chess-game-test",
 		"/home/afaulkner/projects/teaching-coding/chess-game-test/app",
 		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/coordinates-bar",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/coordinates-bar/move-input-box",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/server",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/config",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/docs",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/typings"
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/typescript-basics"
 	],
 	"file_history":
 	[
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board/board-view.tsx",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/server/tsconfig.json",
-		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/index.tsx",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/README.md",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/typescript-basics/typescript-basics.ts",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/tsconfig.json",
 		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/tsconfig.json",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/package.json",
 		"/home/afaulkner/projects/teaching-coding/chess-game-test/config/webpack.config.js",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board/board-container.tsx",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/store/root-store.ts",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/docs/design.md",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/index.tsx",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board/board-view.tsx",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board/board-store.ts",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/build/index.js",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/typings/allow-static-asset-imports.d.ts",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/coordinates-bar/coordinates-bar.tsx",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/coordinates-bar/move-input-box/move-input-box.tsx",
+		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/server/tsconfig.json",
 		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/index.jsx",
 		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/coordinates-bar/coordinates-bar.jsx",
 		"/home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board/board-view.jsx",
@@ -2135,19 +903,7 @@
 		"/home/afaulkner/projects/nf/nanofactory_web/app/client/components/util/buttons/index.ts",
 		"/home/afaulkner/.config/sublime-text/Packages/User/snippets/node_modules/.bin/watch",
 		"/home/afaulkner/projects/nf/nanofactory_web/app/server/helpers/aws/s3/get-s3-json-object.ts",
-		"/home/afaulkner/projects/nf/nanofactory_web/config/app/server.config.ts",
-		"/home/afaulkner/projects/nf/nanofactory_web/app/client/components/util/buttons/_stories/delete-button.stories.tsx",
-		"/home/afaulkner/projects/nf/nanofactory_web/app/client/index.hbs",
-		"/home/afaulkner/projects/nf/nanofactory_web/app/client/components/util/buttons/_stories/nf-submit-button.stories.tsx",
-		"/home/afaulkner/projects/nf/nanofactory_web/shared/augment-global-prototypes/augment-global-prototypes.ts",
-		"/home/afaulkner/projects/nf/nanofactory_web/app/client/components/content/tag-manager-page/util/tag-edit-row.tsx",
-		"/home/afaulkner/projects/nf/nanofactory_web/app/client/helpers/dom-helpers.tsx",
-		"/home/afaulkner/projects/nf/nanofactory_web/node_modules/tsconfig-paths-webpack-plugin/lib/index.d.ts",
-		"/home/afaulkner/projects/nf/nanofactory_web/node_modules/tsconfig-paths-webpack-plugin/lib/plugin.d.ts",
-		"/home/afaulkner/projects/nf/nanofactory_web/script/local-helper-scripts/add-new-form.js",
-		"/home/afaulkner/.config/sublime-text/Packages/User/snippets/snippets/_langs/js/commenting/js--comment--block-1line-bookend.sublime-snippet",
-		"/home/afaulkner/projects/nf/nanofactory_web/babel.config.js",
-		"/home/afaulkner/projects/nf/nanofactory_web/script/setup.sh"
+		"/home/afaulkner/projects/nf/nanofactory_web/config/app/server.config.ts"
 	],
 	"find":
 	{
@@ -2258,6 +1014,26 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"arrFromSimilarObjs",
+			"arrayFromSimilarObjects",
+			"ObjType",
+			"any",
+			"brodie",
+			"retVal",
+			"val3",
+			"string | number",
+			"x",
+			"3",
+			": number",
+			"num",
+			"'",
+			"browser",
+			"b",
+			"browser",
+			"onChange",
+			"value",
+			"changeCoordinateBoxContents",
+			"state",
 			"gc",
 			"\\.\\.",
 			"\n        ",
@@ -2365,27 +1141,7 @@
 			"plus",
 			"Plus",
 			"PlusButton",
-			", ",
-			"DeleteButton",
-			"delete",
-			"Default",
-			"\"../",
-			"../",
-			"rootPath",
-			"pathJoin",
-			"',",
-			"'..",
-			"../",
-			"pathJoin",
-			"watch",
-			"build",
-			"serverConfig",
-			"shared",
-			"Typedef &",
-			"Typedef and form",
-			"watch",
-			"-----------------------------",
-			"---------------------------------------------"
+			", "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -2411,81 +1167,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "docs/design.md",
+					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4700,
+						"buffer_size": 51,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								975,
-								975
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/docs/design.md",
+							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/README.md",
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 432.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/client/index.tsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 727,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								377,
-								377
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html, text.xml"
-								},
-								{
-									"rhs_empty": true,
-									"selector": "punctuation.accessor"
-								},
-								{
-									"characters": ".\"'/@<",
-									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-									"server": "LSP-typescript"
-								}
-							],
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"lsp_active": true,
-							"lsp_hover_provider_count": 1,
-							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/app/client/index.tsx",
-							"show_definitions": false,
-							"syntax": "Packages/TypeScript Syntax/TypeScriptReact.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -2494,215 +1196,18 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/client/components/board/board-view.tsx",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6851,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5926,
-								5926
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html, text.xml"
-								},
-								{
-									"rhs_empty": true,
-									"selector": "punctuation.accessor"
-								},
-								{
-									"characters": ".\"'/@<",
-									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-									"server": "LSP-typescript"
-								}
-							],
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"lsp_active": true,
-							"lsp_hover_provider_count": 1,
-							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board/board-view.tsx",
-							"show_definitions": false,
-							"syntax": "Packages/TypeScript Syntax/TypeScriptReact.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1485.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/client/components/board/board-container.tsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8419,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4723,
-								4723
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html, text.xml"
-								},
-								{
-									"rhs_empty": true,
-									"selector": "punctuation.accessor"
-								},
-								{
-									"characters": ".\"'/@<",
-									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-									"server": "LSP-typescript"
-								}
-							],
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"lsp_active": true,
-							"lsp_hover_provider_count": 1,
-							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/board/board-container.tsx",
-							"show_definitions": false,
-							"syntax": "Packages/TypeScript Syntax/TypeScriptReact.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 7.0,
-						"translation.y": 3480.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/client/components/coordinates-bar/coordinates-bar.tsx",
+					"buffer": 1,
+					"file": "typescript-basics/typescript-basics.ts",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2676,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								614,
-								614
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html, text.xml"
-								},
-								{
-									"rhs_empty": true,
-									"selector": "punctuation.accessor"
-								},
-								{
-									"characters": ".\"'/@<",
-									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-									"server": "LSP-typescript"
-								}
-							],
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"lsp_active": true,
-							"lsp_hover_provider_count": 1,
-							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/app/client/components/coordinates-bar/coordinates-bar.tsx",
-							"show_definitions": false,
-							"syntax": "Packages/TypeScript Syntax/TypeScriptReact.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 209.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/client/tsconfig.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1027,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1018,
-								1018
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/app/client/tsconfig.json",
-							"syntax": "Packages/JSON/JSON.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 792.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "typings/allow-static-asset-imports.d.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1068,
+						"buffer_size": 4606,
 						"regions":
 						{
 						},
@@ -2735,50 +1240,9 @@
 							"ensure_newline_at_eof_on_save": true,
 							"lsp_active": true,
 							"lsp_hover_provider_count": 1,
-							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/typings/allow-static-asset-imports.d.ts",
+							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/typescript-basics/typescript-basics.ts",
 							"show_definitions": false,
 							"syntax": "Packages/TypeScript Syntax/TypeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"stack_multiselect": false,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"sheets":
-			[
-				{
-					"buffer": 7,
-					"file": "README.md",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 51,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"lsp_uri": "file:///home/afaulkner/projects/teaching-coding/chess-game-test/README.md",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -2811,12 +1275,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
 			]
 		],
 		"cols":
@@ -2827,7 +1285,6 @@
 		"rows":
 		[
 			0.0,
-			0.5,
 			1.0
 		]
 	},
@@ -3422,7 +1879,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 340.0,
+	"side_bar_width": 271.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

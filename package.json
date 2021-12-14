@@ -6,7 +6,8 @@
   "scripts": {
     "build-client-dev": "npx webpack --config ./config/webpack.config.js --mode development --watch",
     "prettier": "prettier --config .prettierrc --write \"./@(app|config|script|shared|cypress|test|typings)/**/*.@(js|jsx|ts|tsx)\"",
-    "run-server": "nodemon ./app/server/server.js"
+    "run-server": "nodemon ./app/server/server.js",
+    "run-typescript-basics": "nodemon ./typescript-basics/typescript-basics.ts"
   },
   "repository": {
     "type": "git",
