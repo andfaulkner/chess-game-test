@@ -7,7 +7,9 @@ import cn from 'classnames';
 
 /*--------------------------------------- PROJECT IMPORTS ----------------------------------------*/
 import {CoordinatesBar} from '../coordinates-bar';
+import type {BoardViewProps} from './board-container';
 
+/*------------------------------------------- HELPERS --------------------------------------------*/
 /**
  * Render a chessboard cell of the given colour.
  * @param {'black' | 'white'} props.color Colour of the cell being rendered
@@ -49,7 +51,12 @@ const CellContent = props => {
  * @param {(0 | 1 | 2)[]} props.rowPositions
  * @param {number} props.row The current row's index
  */
-const Row = props => {
+const Row = (props: {
+    offset?: boolean;
+    row: number;
+    rowPositions: number[];
+    clickCell: BoardViewProps['clickCell'];
+}) => {
     const {row} = props;
     if (props.offset) {
         return (
@@ -116,9 +123,9 @@ const Row = props => {
  * Button to swap which side is red and which is blue
  * Example: <SwapSidesButton onClick={swapSides} />
  */
-const SwapSidesButton = props => {
-    return <button onClick={ev => props.onClick()}>Swap sides</button>;
-};
+const SwapSidesButton = (props: {onClick: () => any}) => (
+    <button onClick={ev => props.onClick()}>Swap sides</button>
+);
 
 /**
  * Board view UI component.
@@ -130,7 +137,7 @@ const SwapSidesButton = props => {
  * @param {Function} props.setInputBoxValue Sets the values of the from & to coordinates.
  * @param {() => any} props.submitMove Move piece based on the content of the coordinates bar.
  */
-export const BoardView = (props) => {
+export const BoardView = (props: BoardViewProps) => {
     const {swapSides, headerName, piecePositions, clickCell} = props;
 
     return (
@@ -147,7 +154,6 @@ export const BoardView = (props) => {
             <Row offset rowPositions={piecePositions[5]} clickCell={clickCell} row={5} />
             <Row rowPositions={piecePositions[6]} clickCell={clickCell} row={6} />
             <Row offset rowPositions={piecePositions[7]} clickCell={clickCell} row={7} />
-
 
             {/* BUTTON FOR SWAPPING WHICH SIDE IS WHICH */}
             <SwapSidesButton onClick={swapSides} />

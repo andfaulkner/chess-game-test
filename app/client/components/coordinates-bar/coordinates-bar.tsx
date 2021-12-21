@@ -33,7 +33,7 @@ export class CoordinatesBar extends React.Component<CoordinatesBarProps> {
     /**
      * Submit the current coordinates in the fields to the submitMove callback.
      */
-    submitMove = () => {
+    public submitMove = () => {
         this.props.submitMove(this.state);
         console.log('submitMove (CoordinateBar) :: this.state:', this.state);
     };
