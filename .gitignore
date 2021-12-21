@@ -31,9 +31,6 @@ coverage
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-# Bower dependency directory (https://bower.io/)
-bower_components
-
 # node-waf configuration
 .lock-wscript
 
@@ -43,6 +40,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+bower_components
 
 # TypeScript v1 declaration files
 typings/
@@ -108,3 +106,7 @@ dist
 
 # Ignore VSCode files
 *.code-workspace
+
+# Ignore Sublime files
+*.sublime-project
+*.sublime-workspace
