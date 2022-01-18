@@ -49,10 +49,10 @@ Instructions for machine setup
         mkdir projects
         cd projects
 
-9. Use git to clone the repo at https://github.com/andfaulkner/chess-game-test.
+9. Use git to clone the repo at https://github.com/andfaulkner/checkers-game-test.
     -   Terminal command:
 
-            git clone https://github.com/andfaulkner/chess-game-test.git
+            git clone https://github.com/andfaulkner/checkers-game-test.git
 
 10. Install the node.js libraries for it.
     -   Navigate into the directory on the terminal with `cd chess-game-test`, then type `npm install`
@@ -61,7 +61,9 @@ Instructions for machine setup
 
         npm install -g nodemon prettier avn avn-nvm avn-n
 
-12. Add these to your bashrc file:
+12. Open bashrc file in vim:
+
+    Add these to your bashrc file:
 
         alias ..="cd .."
         alias ...="cd ../.."
@@ -76,8 +78,16 @@ Instructions for machine setup
         alias ............="cd ../../../../../../../../../../.."
         alias .............="cd ../../../../../../../../../../../.."
 
-13. Add an alias to navigate into the chess game project
+13. Add an alias to .bashrc to navigate into the chess game project
 
-        alias gochess="cd [[INSERT PATH TO PROJECT HERE]]"
+        alias gocheckers="cd [[INSERT PATH TO PROJECT HERE]]"
 
 14. Restart terminal for aliases to take effect.
+
+15. Try running the application:
+    a.  Navigate to the application (`gocheckers`), run `npm run build-client-dev`
+    b.  Open a second terminal
+    c.  Navigate to the application (`gocheckers`), run `npm run run-server`
+    d.  Open a browser tab, navigate to localhost:8080. You should see the checkers application.
+
+16. TODO: set up npm autocomplete
