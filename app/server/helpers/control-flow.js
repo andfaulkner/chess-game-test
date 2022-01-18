@@ -96,6 +96,33 @@ dollarsInAccounts.forEach((dollars, idx) => {
     console.log(newVal);
 });
 
+/*----------------------------------------- WHILE LOOPS ------------------------------------------*/
+let iter = 0;
+while(iter < 10) {
+    console.log("iter:", iter);
+    iter++;
+}
+
+let iter2 = 0;
+do {
+    console.log("iter2:", iter2);
+    iter2++;
+} while(iter2 < 10)
+
+
+const infiniteLoop = () => {
+    let iter3 = 0;
+    while(true) {
+        if (iter3 > 5) {
+            console.log("iter3:", iter3);
+            return iter3;
+        }
+        iter3++;
+    }
+};
+
+infiniteLoop();
+
 // NEXT:
 //      MAP
 //      REDUCE
