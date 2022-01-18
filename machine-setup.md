@@ -21,9 +21,9 @@ Instructions for machine setup
     -   If you're on Windows, cmdr is a good choice: https://cmder.net/
 
 4. git (install on the terminal...you'll probably have to look this up too)
-    -   See if it's already present by typing "git"
+    -   See if it's already present by typing `git`
 
-5. Create a github account (github.com)
+5. Create a github account: https://github.com
 
 6. Install nvm using the terminal commands given here: https://github.com/nvm-sh/nvm
 
@@ -32,15 +32,17 @@ Instructions for machine setup
         nvm install v14.16.1
 
 8. Create a projects folder and navigate into it with these terminal commands:
-mkdir projects
-cd projects
+
+        mkdir projects
+        cd projects
 
 9. Use git to clone the repo at https://github.com/andfaulkner/chess-game-test.
     -   Terminal command:
 
             git clone https://github.com/andfaulkner/chess-game-test.git
 
-10. Install the node.js libraries for it (navigate into the directory on the terminal with "cd chess-game-test", then type "npm install")
+10. Install the node.js libraries for it.
+    -   Navigate into the directory on the terminal with `cd chess-game-test`, then type `npm install`
 
 11. Install global node.js libraries. Terminal command:
 
