@@ -37,7 +37,7 @@ cd projects
 9. Use git to clone the repo at https://github.com/andfaulkner/chess-game-test.
     -   Terminal command:
 
-        git clone https://github.com/andfaulkner/chess-game-test.git
+            git clone https://github.com/andfaulkner/chess-game-test.git
 
 10. Install the node.js libraries for it (navigate into the directory on the terminal with "cd chess-game-test", then type "npm install")
 
