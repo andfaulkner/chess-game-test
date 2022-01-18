@@ -5,16 +5,17 @@ Instructions for machine setup
 
 2. Install VS Code (https://code.visualstudio.com/).
     -   Get plugins:
-        -   esbenp.prettier-vscode
-        -   formulahendry.auto-close-tag
-        -   hex-ci.stylelint-plus
-        -   dbaeumer.vscode-eslint
-        -   naumovs.color-highlight
-        -   DigitalBrainstem.javascript-ejs-support
-        -   Optional
-        -   ritwickdey.LiveServer
-        -   erikphansen.vscode-toggle-column-selection
-        -   file-icons
+        -   Recommended:
+            -   esbenp.prettier-vscode
+            -   formulahendry.auto-close-tag
+            -   hex-ci.stylelint-plus
+            -   dbaeumer.vscode-eslint
+            -   naumovs.color-highlight
+            -   DigitalBrainstem.javascript-ejs-support
+        -   Optional:
+            -   ritwickdey.LiveServer
+            -   erikphansen.vscode-toggle-column-selection
+            -   file-icons
 
 3. Get some sort of terminal program
     -   If you're on Windows, cmdr is a good choice: https://cmder.net/
