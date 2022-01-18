@@ -1,6 +1,6 @@
 Instructions for machine setup
 ==============================
-1. If on Windows, set up WSL2: https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10
+1. If on Windows, set up WSL2: https://www.windowscentral.com/how-install-wsl2-windows-10
     -   Also install Ubuntu on it: https://www.microsoft.com/en-gb/p/ubuntu-2004-lts/9n6svws3rx71#activetab=pivot:overviewtab
 
     -   If you get error code 0x80370102 - see these instructions here:
@@ -33,6 +33,10 @@ Instructions for machine setup
 7. Restart the terminal, then use nvm to install the latest version of node.js with this terminal command:
 
         nvm install v14.16.1
+
+    -   Set it as default:
+
+            nvm alias default v14.16.1
 
 8. Create a projects folder and navigate into it with these terminal commands:
 
