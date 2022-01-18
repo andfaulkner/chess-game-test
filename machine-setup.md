@@ -3,6 +3,9 @@ Instructions for machine setup
 1. If on Windows, set up WSL2: https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10
     -   Also install Ubuntu on it: https://www.microsoft.com/en-gb/p/ubuntu-2004-lts/9n6svws3rx71#activetab=pivot:overviewtab
 
+    -   If you get error code 0x80370102 - see these instructions here:
+        https://askubuntu.com/a/1289208
+
 2. Install VS Code (https://code.visualstudio.com/).
     -   Get plugins:
         -   Recommended:
