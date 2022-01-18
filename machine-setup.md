@@ -30,6 +30,12 @@ Instructions for machine setup
 
 6. Install nvm using the terminal commands given here: https://github.com/nvm-sh/nvm
 
+    -   It will be something like:
+
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+    -   ...but grab the most recent instead
+
 7. Restart the terminal, then use nvm to install the latest version of node.js with this terminal command:
 
         nvm install v14.16.1
