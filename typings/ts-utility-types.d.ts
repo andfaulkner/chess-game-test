@@ -26,3 +26,8 @@ declare type ReactComponentMethodsProperties =
  * Get type of Class, omitting react-specific props
  */
 declare type OmitReactProperties<T, O = 'render'> = Omit<T, ReactComponentMethodsProperties | O>;
+
+/**
+ * Informational type identifying that something is an "injection."
+ */
+declare type Injection<T> = T;
