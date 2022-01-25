@@ -22,6 +22,7 @@ Instructions for machine setup
 
 3. Get some sort of terminal program
     -   If you're on Windows, cmdr is a good choice: https://cmder.net/
+    -   TODO cmdr setup
 
 4. git (install on the terminal...you'll probably have to look this up too)
     -   See if it's already present by typing `git`
