@@ -1,8 +1,10 @@
 /*------------------------------------- THIRD-PARTY IMPORTS --------------------------------------*/
 import React from 'react';
+import {inject, observer} from 'mobx-react';
 
 /*--------------------------------------- PROJECT MODULES ----------------------------------------*/
 import {BoardView} from './board-view';
+import {StoreProps} from '../../store/root-store';
 
 /*--------------------------------------- TYPE DEFINITIONS ---------------------------------------*/
 /**
@@ -16,7 +18,7 @@ type Coordinate = [number, number];
 
 type PlayerColour = 'red' | 'blue';
 
-interface BoardContainerProps {}
+interface BoardContainerProps extends StoreProps {}
 
 interface BoardSharedProps {}
 interface BoardContainerProps extends BoardSharedProps {}
@@ -27,15 +29,18 @@ interface BoardContainerProps extends BoardSharedProps {}
 export interface BoardViewProps extends OmitReactProperties<BoardContainer>, BoardSharedProps {
     headerName: string;
     currentPlayer: PlayerColour;
-    from: {x: number, y: number},
-    to: {x: number, y: number},
-    piecePositions: number[][],
+    from: {x: number; y: number};
+    to: {x: number; y: number};
+    piecePositions: number[][];
 }
+
 /*-------------------------------------------- EXPORT --------------------------------------------*/
 /**
  * Logic for component containing the checkers board
  * (React class component).
  */
+@inject('appState')
+@observer
 export class BoardContainer extends React.Component<BoardContainerProps> {
     /*------------------------------------------ STATE -------------------------------------------*/
     /**
@@ -61,10 +66,6 @@ export class BoardContainer extends React.Component<BoardContainerProps> {
             [0, 2, 0, 2, 0, 2, 0, 2],
             [2, 0, 2, 0, 2, 0, 2, 0],
         ],
-        /**
-         * @type {'red'|'blue'}
-         */
-        currentPlayer: 'red' as PlayerColour,
 
         /**
          * Contents of from and to boxes
@@ -96,12 +97,14 @@ export class BoardContainer extends React.Component<BoardContainerProps> {
     };
 
     /**
-     * Temporary method - swaps black and white on board.
-     * Only works once
+     * Temporary method - swaps red and blue on board.
+     * Only works once.
+     * Purpose: test that the board responds at
      *
      * @memberof BoardContainer
      */
     public swapSides = () => {
+        this.props.appState.setCurrentPlayer('blue');
         this.updatePiecePositions([
             [0, 2, 0, 2, 0, 2, 0, 2],
             [2, 0, 2, 0, 2, 0, 2, 0],
@@ -119,13 +122,14 @@ export class BoardContainer extends React.Component<BoardContainerProps> {
      * currently active player.
      */
     private endTurn = (piecePositions: number[][]) => {
+        const {appState} = this.props;
+        appState.setCurrentPlayer(appState.currentPlayer === 'red' ? 'blue' : 'red');
+
         // If the rest of submitMove is successful, swap player (i.e. end player's turn).
         this.setState({
-            currentPlayer: this.state.currentPlayer === 'red' ? 'blue' : 'red',
             piecePositions,
         });
-    }
-;
+    };
     /*-------------------------------------- EVENT HANDLERS --------------------------------------*/
     /**
      * Change the content of one of the input coordinate boxes.
@@ -200,7 +204,7 @@ export class BoardContainer extends React.Component<BoardContainerProps> {
         from: {x: number; y: number};
         to: {x: number; y: number};
     }) => {
-        const isRed = this.state.currentPlayer === 'red';
+        const isRed = this.props.appState.currentPlayer === 'red';
         const isBlue = !isRed;
 
         const fromX = moveValues.from.x;
@@ -291,7 +295,7 @@ export class BoardContainer extends React.Component<BoardContainerProps> {
                 swapSides={this.swapSides}
                 clickCell={this.clickCell}
                 submitMove={this.submitMove}
-                currentPlayer={this.state.currentPlayer}
+                currentPlayer={this.props.appState.currentPlayer}
                 from={this.state.boxContents.from}
                 to={this.state.boxContents.to}
                 changeCoordinateBoxContents={this.changeCoordinateBoxContents}
