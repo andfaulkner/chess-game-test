@@ -222,6 +222,34 @@ run3Times(() => {
     console.log(`uiop`);
 });
 
+// const logOnInterval = () => {
+//     console.log(`Log every 5 seconds`);
+// };
+// setInterval(logOnInterval, 5000);
+
+// const logOnAnotherInterval = () => {
+//     console.log(`Log every second`);
+// };
+// setInterval(logOnAnotherInterval, 1000);
+
+// const setIntervalPseudocode = (callback, interval) => {
+//     while(true) {
+//         sleep(interval);
+//         callback();
+//     }
+// }
+
+// setInterval(() => {
+//     console.log(`Log every 2 seconds`);
+// }, 2000);
+
+let count = 0;
+
+// setInterval(() => {
+//     count--;
+//     console.log(`Log every 2 seconds - count:`, count);
+// }, 2000);
+
 const textConcat = (text1, text2, callback) => {
     const fullText = `${text1}${text2}`;
     callback(fullText);
@@ -237,13 +265,72 @@ const logger = (stringToLog) => {
 
 textConcat('Hello ', 'world yet again', logger);
 
+/*------------------------------------------ RECURSION -------------------------------------------*/
+const firstDoubledValAfter10 = (value) => {
+    if (value > 10) return value;
+    const newValue = value * 2;
+    return firstDoubledValAfter10(newValue);
+};
+
+const totalAfterRecursion = firstDoubledValAfter10(1);
+
+console.log(`TOTAL AFTER RECURSION:`, totalAfterRecursion);
+
+// TODO complete recursion example.
+
+const fileSystem = [
+    {bin: [
+        // File example
+        'grep',
+        // Directory example
+        {java: [
+            'dmachine',
+            'jar',
+            'vmachine',
+        ]}
+    ]},
+    {sbin: [
+        'awk',
+        'node'
+    ]},
+];
+
+//
+// /bin/grep
+// /bin/java/dmachine
+// /bin/java/jar
+// /bin/java/vmachine
+// /sbin/awk
+// /sbin/node
+//
+
+// const treewalker = (curFileSystem, curPath, matchFileName) => {
+//     if (Array.isArray(curFileSystem)) {
+//         return treewalker(curFileSystem, curPath, matchFileName);
+//     }
+//     if (typeof curFileSystem === 'object' && curFileSystem !== null) {
+//         curFileSystem[]
+//     }
+// };
+
+// treewalker(fileSystem,)
+
 //-------- null data type --------
 let nullValue = null;
 console.log(nullValue);
 
 //-------- undefined data type --------
+// OK I guess, but not the best
 let undefinedValue;
 console.log(undefinedValue);
+
+// Probably don't do this
+let undefinedValue2 = undefined;
+console.log(undefinedValue2);
+
+// DON'T FUCKING DO THIS, SERIOUSLY, DON'T
+// let undefined = 'NOT UNDEFINED ANYMORE!';
+// console.log(undefined);
 
 //-------- boolean data type --------
 const trueVal = true;
@@ -256,10 +343,13 @@ const orangeFruit = {
     ageInMonths: 1,
     isPeeled: false
 };
-console.log(orangeFruit);
+console.log(`orange state before peeling:`, orangeFruit);
 
 orangeFruit.isPeeled = true;
-console.log(orangeFruit);
+console.log(`orange state after peeling:`, orangeFruit);
 
-// Export
+/*----------------------------------------- TYPE TESTING -----------------------------------------*/
+// TODO NEXT TOPIC: type testing
+
+/*-------------------------------------------- EXPORT --------------------------------------------*/
 module.exports = buildPerson;
