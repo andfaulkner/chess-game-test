@@ -40,6 +40,8 @@
         "./typescript-basics/*.ts",
         "./typescript-basics/**/*.ts",
         "./typescript-basics/*.tsx",
-        "./typescript-basics/**/*.tsx"
+        "./typescript-basics/**/*.tsx",
+        "./app/server/helpers",
+        "./node_modules/jimp"
     ]
 }

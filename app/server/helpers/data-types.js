@@ -53,6 +53,26 @@ console.log(Object.keys(nissan));
 console.log(Object.values(nissan));
 console.log(Object.entries(nissan));
 
+//-- Object destructuring --/
+
+// const bmpjs = require('bmp-js');
+// const decode = bmpjs.decode;
+//
+// module.exports = {
+//     decode: () => console.log(`Some function here`);
+//     // ..
+// };
+
+const dog = {
+    name: 'Meeka',
+    age: 11
+};
+
+const {name} = dog;
+// const name = dog.name;
+
+const {name: meekaName} = dog;
+
 //-------- Array data type --------
 const fruit = [
     'apple',
