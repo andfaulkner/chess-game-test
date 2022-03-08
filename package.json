@@ -7,6 +7,7 @@
     "build-client-dev": "npx webpack --config ./config/webpack.config.ts --mode development --watch",
     "prettier": "npx prettier --config .prettierrc --write \"./@(app|config|script|shared|cypress|test|typings)/**/*.@(js|jsx|ts|tsx)\"",
     "run-server": "npx nodemon ./app/server/server.js",
+    "run-js-data-types": "npx nodemon ./javascript-typescript-basics/data-types.js",
     "run-typescript-basics": "npx nodemon ./javascript-typescript-basics/typescript-basics.ts"
   },
   "repository": {
