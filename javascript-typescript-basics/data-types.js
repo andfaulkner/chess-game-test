@@ -236,10 +236,31 @@ const run3Times = (cb) => {
 run3Times(() => {
     console.log(`Doesn't matter`);
 });
+// Output:
+//      Doesn't matter
+//      Doesn't matter
+//      Doesn't matter
 
 run3Times(() => {
     console.log(`qwerty`);
     console.log(`uiop`);
+});
+// Output:
+//      qwerty
+//      uiop
+//      qwerty
+//      uiop
+//      qwerty
+//      uiop
+
+const runXTimes = (numRuns, cb) => {
+    for (let idx = 0; idx < numRuns; idx++) {
+        cb();
+    }
+};
+
+runXTimes(5, () => {
+    console.log('Ran!');
 });
 
 // const logOnInterval = () => {
