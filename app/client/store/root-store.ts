@@ -26,7 +26,7 @@ export class RootStore {
     @action
     public setCurrentPlayer = (newCurrentPlayer: 'red' | 'blue') => {
         this.currentPlayer = newCurrentPlayer;
-    }
+    };
 
     /*---------------------------------------- LIFECYCLE -----------------------------------------*/
     /**
@@ -38,7 +38,7 @@ export class RootStore {
             console.log(`RootStore created: `, RootStore.Instance);
         }
         return RootStore.Instance;
-    }
+    };
 
     private constructor() {}
 }

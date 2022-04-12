@@ -230,6 +230,7 @@ console.log(jDoe);
 jDoe.firstName = 'Jack';
 console.log(jDoe);
 
+//----- COMPLEX FACTORY FUNCTIONS -----//
 // // Factory function - makes mutable object with functions
 // const buildPerson = (firstName, lastName, initialAge) => {
 //     const personsData = {age: initialAge};

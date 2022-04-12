@@ -11,14 +11,13 @@ const log = logFactory(__filename.replace(`${__dirname}/`, ``), Styles.probeArca
  * MobX store containing data about the board.
  */
 export class BoardStore {
-
     /**
      * Factory method (true constructor)
      */
     static new = () => {
         log.verbose(`BoardStore#new :: Creating new BoardStore`);
         return new BoardStore();
-    }
+    };
 
     constructor() {}
 }

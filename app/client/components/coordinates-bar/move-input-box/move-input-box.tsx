@@ -9,9 +9,9 @@ import cn from 'classnames';
 interface MoveInputBoxProps {
     id: string;
     label: string;
-    onChangeX: (numValue: number) => any
-    onChangeY: (numValue: number) => any
-    value: {x: number, y: number};
+    onChangeX: (numValue: number) => any;
+    onChangeY: (numValue: number) => any;
+    value: {x: number; y: number};
 }
 
 /*-------------------------------------------- EXPORT --------------------------------------------*/

@@ -1,5 +1,5 @@
 /*------------------------------------------- IMPORTS --------------------------------------------*/
-import type {Configuration} from 'webpack'
+import type {Configuration} from 'webpack';
 import {path as rootPath} from 'app-root-path';
 
 import path from 'path';

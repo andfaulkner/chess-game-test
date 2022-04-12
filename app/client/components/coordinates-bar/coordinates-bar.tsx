@@ -14,8 +14,8 @@ interface CoordinatesBarProps {
      * TODO don't make this any type.
      */
     submitMove: (arg: any) => any;
-    from: {x: number, y: number};
-    to: {x: number, y: number};
+    from: {x: number; y: number};
+    to: {x: number; y: number};
     changeCoordinateBoxContents: (boxType: 'from' | 'to', axis: 'x' | 'y', value: number) => any;
 }
 
