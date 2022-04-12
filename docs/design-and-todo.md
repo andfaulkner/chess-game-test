@@ -26,6 +26,16 @@
     !   Get autocompletions working in VSCode again for jsx files
     !   Get prettier working
 
+
+----------------------------------------------------------------------------------------------------
+CURRENT LOCATION
+================
+!   Explain objects again (for Isaac).
+    !   Then explain the object returned by the builder function.
+!   Explain factory functions (for Isaac).
+-   Explain complex factory functions (for Isaac)
+    -- i.e. factory functions with functions and closures in the return object
+
 -   Refactors and codebase setup
     !   Add .editorconfig
     !   Get rid of the commented-out code
