@@ -8,6 +8,7 @@
     "prettier": "npx prettier --config .prettierrc --write \"./@(app|config|script|shared|cypress|test|typings)/**/*.@(js|jsx|ts|tsx)\"",
     "run-server": "npx nodemon ./app/server/server.js",
     "run-js-data-types": "npx nodemon ./javascript-typescript-basics/data-types.js",
+    "run-js-control-flow": "npx nodemon ./javascript-typescript-basics/control-flow.js",
     "run-typescript-basics": "npx nodemon ./javascript-typescript-basics/typescript-basics.ts"
   },
   "repository": {
