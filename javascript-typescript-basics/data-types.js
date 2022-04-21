@@ -231,47 +231,51 @@ jDoe.firstName = 'Jack';
 console.log(jDoe);
 
 //----- COMPLEX FACTORY FUNCTIONS -----//
-// // Factory function - makes mutable object with functions
-// const buildPerson = (firstName, lastName, initialAge) => {
-//     const personsData = {age: initialAge};
+/**
+ * Factory function - makes mutable object with functions.
+ */
+const buildPerson = (firstName, lastName, initialAge) => {
+    const personsData = {age: initialAge};
 
-//     return {
-//         firstName: firstName,
-//         lastName: lastName,
-//         haveBirthday: () => {
-//             personsData.age = personsData.age + 1;
-//         },
-//         getAge: () => {
-//             return personsData.age;
-//         }
-//     };
-// };
+    return {
+        firstName: firstName,
+        lastName: lastName,
+        haveBirthday: () => {
+            personsData.age = personsData.age + 1;
+        },
+        setAge: age => {
+            personsData.age = age;
+        },
+        getAge: () => personsData.age
+    };
+};
 
-// const jimBob = buildPerson('jim', 'bob', 28);
-// console.log(jimBob);
+const jimBob = buildPerson(`jim`, `bob`, 28);
+console.log(jimBob);
+console.log(jimBob.getAge());
 
-// jimBob.haveBirthday();
-// console.log(jimBob.getAge());
+jimBob.haveBirthday();
+console.log(jimBob.getAge());
 
-// console.log(jimBob.whatIAm);
+jimBob.setAge(50);
+console.log(jimBob.getAge());
 
-// const janeNotdoe = buildPerson('Jane', 'Notdoe', 30);
-// console.log(janeNotdoe.lastName);
-// janeNotdoe.haveBirthday();
-// janeNotdoe.haveBirthday();
-// janeNotdoe.haveBirthday();
-// console.log(janeNotdoe.getAge());
+const janeNotdoe = buildPerson('Jane', 'Notdoe', 30);
+console.log(janeNotdoe.lastName);
+janeNotdoe.haveBirthday();
+janeNotdoe.haveBirthday();
+janeNotdoe.haveBirthday();
+console.log(janeNotdoe.getAge());
 
-// /*------------------------------------------ RECURSION -------------------------------------------*/
-// const firstDoubledValAfter10 = (value) => {
-//     if (value > 10) return value;
-//     const newValue = value * 2;
-//     return firstDoubledValAfter10(newValue);
-// };
+/*------------------------------------------ RECURSION -------------------------------------------*/
+const firstDoubledValAfter10 = value => {
+    if (value > 10) return value;
+    const newValue = value * 2;
+    return firstDoubledValAfter10(newValue);
+};
 
-// const totalAfterRecursion = firstDoubledValAfter10(1);
-
-// console.log(`TOTAL AFTER RECURSION:`, totalAfterRecursion);
+const totalAfterRecursion = firstDoubledValAfter10(1);
+console.log(`TOTAL AFTER RECURSION:`, totalAfterRecursion);
 
 // // TODO complete recursion example.
 
@@ -292,23 +296,23 @@ console.log(jDoe);
 //     ]},
 // ];
 
-// //
-// // /bin/grep
-// // /bin/java/dmachine
-// // /bin/java/jar
-// // /bin/java/vmachine
-// // /sbin/awk
-// // /sbin/node
-// //
+// /bin/grep
+// /bin/java/dmachine
+// /bin/java/jar
+// /bin/java/vmachine
+// /sbin/awk
+// /sbin/node
 
-// // const treewalker = (curFileSystem, curPath, matchFileName) => {
-// //     if (Array.isArray(curFileSystem)) {
-// //         return treewalker(curFileSystem, curPath, matchFileName);
-// //     }
-// //     if (typeof curFileSystem === 'object' && curFileSystem !== null) {
-// //         curFileSystem[]
-// //     }
-// // };
+// const treewalker = (curFileSystem) => {
+//     if (typeof curFileSystem === 'object' && curFileSystem !== null) {
+//         Object.keys(curFileSystem).forEach(curLoc => {
+//             return treewalker(curLoc);
+//         });
+//     }
+//     if (Array.isArray(curFileSystem)) {
+//         return treewalker(curFileSystem, curPath, matchFileName);
+//     }
+// };
 
 // // treewalker(fileSystem,)
 
@@ -504,8 +508,71 @@ console.log(jDoe);
 
 // textConcat('Hello ', 'world yet again', logger);
 
-// /*----------------------------------------- TYPE TESTING -----------------------------------------*/
-// // TODO NEXT TOPIC: type testing
+/*----------------------------------------- TYPE TESTING -----------------------------------------*/
+const runTests = fn => {
+    const testNum = 10;
+    console.log(`Function name:`, fn.name);
+    console.log(`START TESTS:`);
+    console.log(`${fn.name}("I'm a string!") -- `, fn("I'm a string!"));
+    console.log(`${fn.name}(10) -- `, fn(10));
+    console.log(`${fn.name}(10.toString()) -- `, fn(testNum.toString()));
+    console.log(`${fn.name}('') -- `, fn(''));
+    console.log(`${fn.name}(0) -- `, fn(0));
+    console.log(`${fn.name}(false) -- `, fn(false));
+    console.log(`${fn.name}(true) -- `, fn(true));
+    console.log(`${fn.name}(null) -- `, fn(null));
+    console.log(`${fn.name}(Infinity) -- `, fn(Infinity));
+    console.log(`${fn.name}(undefined) -- `, fn(undefined));
+    console.log(`${fn.name}([]) -- `, fn([]));
+    console.log(`${fn.name}([1, 2]) -- `, fn([1, 2]));
+    console.log(`${fn.name}(['Eric','eats', 'poo']) -- `, fn(['Eric', 'eats', 'poo']));
+    console.log(`${fn.name}({}) -- `, fn({}));
+    console.log(`${fn.name}({a: 'eeeh'}) -- `, fn({a: 'eeeh'}));
+    console.log(
+        `${fn.name}({name: 'eric', favFood: 'poo'}) -- `,
+        fn({name: 'eric', favFood: 'poo'})
+    );
+    console.log(`TEST ON value END TESTS\n`);
+};
+
+const isString = someVal => {
+    return typeof someVal === 'string';
+};
+
+const isNumber = someVal => {
+    return typeof someVal === 'number';
+};
+
+const isBoolean = someVal => {
+    return typeof someVal === 'boolean';
+};
+
+const isArray = someVal => {
+    return Array.isArray(someVal);
+};
+
+const isNull = someVal => {
+    // Not a typo - DO NOT do typeof when comparing against null
+    return someVal === null;
+};
+
+const isUndefined = someVal => {
+    return typeof someVal === 'undefined';
+};
+
+const isObject = someVal => {
+    return typeof someVal === 'object' && someVal !== null && !Array.isArray(someVal);
+};
+
+runTests(isString);
+runTests(isNumber);
+runTests(isBoolean);
+runTests(isArray);
+runTests(isNull);
+runTests(isUndefined);
+runTests(isObject);
+
+console.log(typeof null);
 
 // /*-------------------------------------------- EXPORT --------------------------------------------*/
 // module.exports = buildPerson;
