@@ -1,24 +1,25 @@
 //------------------------ IF-THEN STATEMENTS ------------------------
-const ericAge = 27;
-const brodyAge = 28;
+const ericWootness = 29;
+const brodyWootness = 28;
 
-if (ericAge > brodyAge) {
-    console.log('Eric is older than Brody');
-} else if (ericAge === brodyAge) {
-    console.log('Eric is the same age as Brody');
+if (ericWootness > brodyWootness) {
+    console.log(`Eric is wooter than Brody`);
+} else if (ericWootness === brodyWootness) {
+    console.log(`Eric is the same woot as Brody`);
 } else {
-    console.log('Brody is older than Eric');
+    console.log(`Brody is less woot than Eric`);
 }
 
 //----- DON'T DO THIS -----
 const element = 'Na';
-
 if (element === 'H') {
     console.log(`This element is Hydrogen`);
 } else if (element === 'He') {
     console.log(`This element is Helium`);
 } else if (element === 'Na') {
     console.log(`This element is Sodium`);
+} else if (element === 'Mg') {
+    console.log(`This element is Magnesium`);
 }
 
 //----- DO THIS INSTEAD ----
@@ -29,33 +30,102 @@ const periodicTable = {
     Mg: 'Magnesium'
     // etc.
 };
+const chemicalSymbol = 'Mg';
+const elementName = periodicTable[chemicalSymbol];
+console.log(`This element is ${elementName}`);
 
-const element1 = 'Mg';
-console.log(`This element is ${periodicTable[element1]}`);
+/*------------------------------ SECOND EXAMPLE ------------------------------*/
+const boxName = 'box1';
+
+if (boxName === 'box1') {
+    console.log('The box has apples');
+} else if (boxName === 'box2') {
+    console.log('The box has pears');
+}
+if (boxName === 'box3') {
+    console.log('The box has guavas');
+}
+
+const fruitBoxes = {
+    box1: 'apples',
+    box2: 'pears',
+    box3: 'guavas'
+};
+
+const boxContent = fruitBoxes[boxName];
+console.log('The box has ${boxContent}');
+
+// NOTE: usable for getting functions on objects as well
+/**
+ * You can place functions in object keys
+ */
+const logger = {
+    verbose: arg => {
+        console.log(arg);
+    },
+    info: arg => {
+        console.log(`INFO :: `, arg);
+    },
+    warn: arg => {
+        console.log(`WARNING - DANGER :: `, arg);
+    }
+};
+
+logger.info(`Eric is the wootest of all`);
+logger.warn(`Eric is almost TOO woot`);
 
 //------------------------ SWITCH STATEMENTS ------------------------
 const fruit = 'guava';
 const fruit2 = 'pear';
 const fruit3 = 'pineapple';
 const fruit4 = 'aeirughesirughergijo';
+const noOneGivesAFuckFruit = 'dorian';
 
-switch (fruit4) {
-    case 'guava':
+const logFruitInfo = fruitArg => {
+    switch (fruitArg) {
+        case 'guava':
+            console.log('This fruit is a guava WOOT');
+            break;
+
+        case 'pear':
+            console.log('This fruit is a pear HEY');
+            break;
+
+        // "Fall through" - both cases match the same thing
+        case 'pineapple':
+        case 'passionfruit':
+            console.log('This fruit is tropical YO');
+            break;
+
+        case 'dorian':
+            break;
+
+        // Note: optional
+        default:
+            console.log('This is an unknown fruit GR');
+    }
+};
+
+logFruitInfo(fruit);
+logFruitInfo('pineapple');
+
+// Switch statement function above is equivalent to:
+const logFruitInfoWithIfTree = fruitArg => {
+    if (fruitArg === 'guava') {
         console.log('This fruit is a guava WOOT');
-        break;
-
-    case 'pear':
+    } else if (fruitArg === 'pear') {
         console.log('This fruit is a pear HEY');
-        break;
-
-    case 'pineapple':
-    case 'passionfruit':
+    } else if (fruitArg === 'pineapple' || fruitArg === 'passionfruit') {
         console.log('This fruit is tropical YO');
-        break;
-
-    default:
+    } else if (fruitArg === 'dorian') {
+    } else {
         console.log('This is an unknown fruit GR');
-}
+    }
+};
+
+logFruitInfoWithIfTree('pear');
+logFruitInfoWithIfTree('aeirughesirughergijo');
+
 
 let lifeUniverseEverything = 42;
 console.log(lifeUniverseEverything);
@@ -98,23 +168,22 @@ dollarsInAccounts.forEach((dollars, idx) => {
 
 /*----------------------------------------- WHILE LOOPS ------------------------------------------*/
 let iter = 0;
-while(iter < 10) {
-    console.log("iter:", iter);
+while (iter < 10) {
+    console.log('iter:', iter);
     iter++;
 }
 
 let iter2 = 0;
 do {
-    console.log("iter2:", iter2);
+    console.log('iter2:', iter2);
     iter2++;
-} while(iter2 < 10)
-
+} while (iter2 < 10);
 
 const infiniteLoop = () => {
     let iter3 = 0;
-    while(true) {
+    while (true) {
         if (iter3 > 5) {
-            console.log("iter3:", iter3);
+            console.log('iter3:', iter3);
             return iter3;
         }
         iter3++;
