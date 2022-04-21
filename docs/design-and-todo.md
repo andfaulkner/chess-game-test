@@ -20,6 +20,7 @@
 !   Draw pieces
 !   Click cell method placeholder
 !   Pass row and column index into click cell method (make cells aware of location)
+
 ---
 
 !   New system setup
@@ -30,11 +31,20 @@
 ----------------------------------------------------------------------------------------------------
 CURRENT LOCATION
 ================
-!   Explain objects again (for Isaac).
-    !   Then explain the object returned by the builder function.
-!   Explain factory functions (for Isaac).
--   Explain complex factory functions (for Isaac)
+!   Explain objects again (for Isaac)
+    !   Then explain the object returned by the builder function
+!   Explain factory functions (for Isaac)
+!   Explain complex factory functions (for Isaac)
     -- i.e. factory functions with functions and closures in the return object
+
+!   Type testing
+
+-   Bonus credit:
+    -   Make your own open-source npm library
+
+-   Control flow
+    -   if-then
+
 
 -   Refactors and codebase setup
     !   Add .editorconfig
@@ -47,7 +57,9 @@ CURRENT LOCATION
     -   Add typechecking
         -   Update to Typescript
 
--   Add EditorConfig
+!   Add EditorConfig
+
+-   How to add snippets (Sublime but figure it out for VSCode)
 
 -   Making pieces move
     !   Create input boxes (to and from)
