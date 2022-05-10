@@ -574,5 +574,21 @@ runTests(isObject);
 
 console.log(typeof null);
 
+/*--------------------------------------------- NaN ----------------------------------------------*/
+// Causes NaN because the minus before the variable causes it to implicitly try to multiply
+// the string in fruitArr at position 0 by -1, which results in "fuck knows what," so it
+// displays NaN (for 'not a number')...because it's literally "not a number," so it's telling
+// you you're a dumbass for trying to multiply a number by it.
+console.log(`This is a template string with a NaN in it ${-fruitArr[0]}`);
+// Similar to the above, but it's trying to multiple a string by +1
+console.log(`This is another template string with a NaN in it ${+fruitArr[0]}`);
+// The below is identical to the previous example (it's just the long form of it)
+console.log(`This is another template string with a NaN in it ${1 * fruitArr[0]}`);
+
+// In short, NaN is roughly analogous to "fuck knows"
+console.log(1 / "apple");
+// ...because what would you expect the prior line to output?
+// Answer: "Fuck knows" (therefore NaN is what it shits out).
+
 // /*-------------------------------------------- EXPORT --------------------------------------------*/
 // module.exports = buildPerson;

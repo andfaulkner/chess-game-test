@@ -53,7 +53,7 @@ const fruitBoxes = {
 };
 
 const boxContent = fruitBoxes[boxName];
-console.log('The box has ${boxContent}');
+console.log(`The box has ${boxContent}`);
 
 // NOTE: usable for getting functions on objects as well
 /**
@@ -126,15 +126,6 @@ const logFruitInfoWithIfTree = fruitArg => {
 logFruitInfoWithIfTree('pear');
 logFruitInfoWithIfTree('aeirughesirughergijo');
 
-
-let lifeUniverseEverything = 42;
-console.log(lifeUniverseEverything);
-
-lifeUniverseEverything++;
-// Identical to:
-//    lifeUniverseEverything = lifeUniverseEverything + 1;
-console.log(lifeUniverseEverything);
-
 //-------------------------- BASIC FOR LOOPS --------------------------
 for (let idx = 0; idx <= 10; idx++) {
     console.log(`My current index is: ${idx}`);
@@ -149,15 +140,21 @@ for (let piece of pieces) {
 }
 
 //------------------------- FOR-EACH LOOPS -------------------------
-const fruitArr = ['apple', 'mango', 'papaya'];
+const fruitArr = ['apple', 'papaya', 'mango'];
 
 fruitArr.forEach(item => {
-    console.log(item);
+    console.log('In forEach loop with no idx:', item);
 });
 
 fruitArr.forEach((item, idx) => {
     console.log(`Fruit number ${idx} is ${item}`);
 });
+
+// '
+// "
+// ` <<<< ONLY THIS ALLOWS TEMPLATE STRINGS (i.e. `text here with ${variableHere}.`)
+
+console.log(`sortedArr:`, fruitArr.sort());
 
 const dollarsInAccounts = [22, 55, 100, 200];
 

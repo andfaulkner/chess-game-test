@@ -43,7 +43,15 @@ CURRENT LOCATION
     -   Make your own open-source npm library
 
 -   Control flow
-    -   if-then
+    !   if-then
+    !   switch
+    !   for
+    !   for-of
+    !   while
+    !   forEach
+    -   map
+    -   reduce
+    -   filter
 
 
 -   Refactors and codebase setup
@@ -64,16 +72,13 @@ CURRENT LOCATION
 -   Making pieces move
     !   Create input boxes (to and from)
     !   Refactor rows inside BoardView to be more concise
-
-    -   Fix x coordinate box updating on click
-
+    !   Fix x coordinate box updating on click
     -   DEDICATE NEXT SESSION TO CLEANING TECHNICAL DEBT AND ADDITIONAL CODEBASE SETUP
         -   Add source mapping
         -   Create MobX state container
         -   Add Typescript
 
     -   Make submitMove able to control pieces
-
 
     -   Make clicking a cell select a piece if piece is present
         -   Selecting piece inputs the cell coordinates into the box
