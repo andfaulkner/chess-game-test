@@ -42,16 +42,58 @@ CURRENT LOCATION
 -   Bonus credit:
     -   Make your own open-source npm library
 
--   Control flow
+!   Control flow
     !   if-then
     !   switch
     !   for
     !   for-of
     !   while
     !   forEach
-    -   map
-    -   reduce
-    -   filter
+    !   map
+    !   reduce
+    !   filter
+
+!   Classes basics
+    !   basic inheritance
+        !   Including super in constructor
+    !   basic constructors
+    !   basic properties
+    !   "this" (basics)
+
+-   React
+    -   Model-view-controller
+    -   What it is
+    -
+
+
+
+
+Hi Isaac! You are super-rich today!
+
+MODEL
+=====
+userData = {
+    firstName: 'Isaac',
+    socialClass: 'super-rich',
+}
+
+CONTROLLER
+==========
+// receive request for user data from client
+view.firstName = userData.firstName;
+view.socialClass = userData.socialClass
+// return populated view to client;
+
+VIEW
+====
+Hi {firstName}! You are {socialClass} today!
+
+
+
+
+
+
+
 
 
 -   Refactors and codebase setup
