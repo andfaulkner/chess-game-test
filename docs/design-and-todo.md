@@ -93,11 +93,6 @@ Hi {firstName}! You are {socialClass} today!
 
 
 
-
-
-
-
-
 -   Refactors and codebase setup
     !   Add .editorconfig
     !   Get rid of the commented-out code
