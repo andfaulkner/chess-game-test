@@ -34,13 +34,14 @@ export interface BoardViewProps extends OmitReactProperties<BoardContainer>, Boa
     piecePositions: number[][];
 }
 
+export const someRandomShit = 'Eric eats poop';
+
+
 /*-------------------------------------------- EXPORT --------------------------------------------*/
 /**
  * Logic for component containing the checkers board
  * (React class component).
  */
-@inject('appState')
-@observer
 export class BoardContainer extends React.Component<BoardContainerProps> {
     /*------------------------------------------ STATE -------------------------------------------*/
     /**

@@ -30,4 +30,3 @@ overrides:
 - files: '.nodeplus'
   options:
     trailingComma: 'none'
-    

@@ -4,6 +4,6 @@
 module.exports = () => {
     console.log('About to say what Eric is!');
     return {
-        whatEricIs: 'still one big piece of poop!',
+        whatEricIs: 'still one big piece of poop!'
     };
-}
+};

@@ -54,21 +54,21 @@ CURRENT LOCATION
     !   filter
 
 !   Classes basics
-    !   basic inheritance
+    !   Basic inheritance
         !   Including super in constructor
-    !   basic constructors
-    !   basic properties
+    !   Basic constructors
+    !   Basic properties
     !   "this" (basics)
+
+-   Typescript
 
 -   React
     -   Model-view-controller
     -   What it is
-    -
+    -   Components
+    -   Build little toy component
+    -   Import statements
 
-
-
-
-Hi Isaac! You are super-rich today!
 
 MODEL
 =====
@@ -77,12 +77,14 @@ userData = {
     socialClass: 'super-rich',
 }
 
+
 CONTROLLER
 ==========
 // receive request for user data from client
 view.firstName = userData.firstName;
 view.socialClass = userData.socialClass
 // return populated view to client;
+
 
 VIEW
 ====
@@ -263,3 +265,8 @@ Could-have:
 Would like to have:
 -   Piece/board theme
 -   Leaderboard
+
+
+
+
+CRS-GajJ-Ghuo-6fVRq

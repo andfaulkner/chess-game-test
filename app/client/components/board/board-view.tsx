@@ -124,7 +124,7 @@ const Row = (props: {
  * Example: <SwapSidesButton onClick={swapSides} />
  */
 const SwapSidesButton = (props: {onClick: () => any}) => (
-    <button onClick={ev => props.onClick()}>Swap sides</button>
+    <button onClick={_ev => props.onClick()}>Swap sides</button>
 );
 
 /**
