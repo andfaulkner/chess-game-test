@@ -15,6 +15,10 @@ console.log(`Eric is`, ericInfoObj.whatEricIs);
 const express = require('express');
 const app = express();
 
+// Body parser setup
+const bodyParser = require('body-parser');
+const jsonParser = bodyParser.json()
+
 /*-------------------------------------------- CONFIG --------------------------------------------*/
 const path = require('path');
 const buildPath = path.join(__dirname, '../../build');
@@ -25,13 +29,17 @@ const buildPath = path.join(__dirname, '../../build');
  */
 app.use(express.static('build'));
 
-// Similar functionality to what app.use is doing.
+/**
+ * Similar functionality to what app.use is doing.
+ */
 app.get('/file/:fileName', (req, res) => {
     const fileName = req.params.fileName;
     res.status(200).sendFile(path.join(buildPath, fileName));
 });
 
-// Manual routes (GET requests)
+/**
+ * Manual routes (GET requests).
+ */
 app.get('/more-eric-info-route', (req, res) => {
     res.json(ericInfoObj);
 });
@@ -40,6 +48,7 @@ app.get('/eric-info-redux', (req, res) => {
     res.status(200).send(`Eric is ${ericInfoObj.whatEricIs}`);
 });
 
+// Route that takes query parameter
 app.get('/info-redux', (req, res) => {
     const nameReceived = req.query.name;
     res.status(200).send(`${nameReceived} is one big piece of poop`);
@@ -48,6 +57,21 @@ app.get('/info-redux', (req, res) => {
 app.get('/info/:name', (req, res) => {
     const nameReceived = req.params.name;
     res.status(200).send(`${nameReceived} is one big piece of poop`);
+});
+
+app.post('/name', jsonParser, (req, res) => {
+    const nameReceived = req.body[`name`];
+    res.status(200).send(`${nameReceived} is one big piece of poop [SET NAME]`);
+});
+
+app.put('/name', jsonParser, (req, res) => {
+    const nameReceived = req.body[`name`];
+    res.status(200).send(`${nameReceived} is one big piece of poop [CHANGE NAME]\n`);
+});
+
+app.delete('/name', jsonParser, (req, res) => {
+    const nameReceived = req.body[`name`];
+    res.status(200).send(`${nameReceived} is one big piece of poop [DELETE NAME]\n`);
 });
 
 /*---------------------------------------- LAUNCH SERVER -----------------------------------------*/

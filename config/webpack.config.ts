@@ -57,7 +57,15 @@ export default {
         rules: [
             // Handle Typescript files
             {
-                test: /\.tsx?$/,
+                // \.tsx would match:
+                //   hello.tsx
+                //   hello.tsx.spec.mocha
+                //   .tsxparser.cpp
+                //   parse.tsx.fortran
+                //
+                // \.tsx$ would match (of the above) only:
+                //   hello.tsx
+                test: /\.tsx$/,
                 use: [
                     {
                         loader: 'ts-loader',

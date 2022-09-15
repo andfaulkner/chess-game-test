@@ -43,6 +43,7 @@ export const someRandomShit = 'Eric eats poop';
  * (React class component).
  */
 @inject('appState')
+@observer
 export class BoardContainer extends React.Component<BoardContainerProps> {
     /*------------------------------------------ STATE -------------------------------------------*/
     /**

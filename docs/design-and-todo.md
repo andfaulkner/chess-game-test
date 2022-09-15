@@ -60,6 +60,15 @@ CURRENT LOCATION
     !   Basic properties
     !   "this" (basics)
 
+-   React
+    -   Model-view-controller
+    -   What it is
+    -   Components
+    -   SFCs
+    -   Props
+    -   Class components
+    -   Built-in tags
+
 -   Typescript
 
 -   React
@@ -89,9 +98,6 @@ view.socialClass = userData.socialClass
 VIEW
 ====
 Hi {firstName}! You are {socialClass} today!
-
-
-
 
 -   Refactors and codebase setup
     !   Add .editorconfig
@@ -262,6 +268,8 @@ Would like to have:
 -   Leaderboard
 
 
-
-
-CRS-GajJ-Ghuo-6fVRq
+----------------------------------------------------------------------------------------------------
+Homework
+--------
+-   Make an npm module
+-   Learn some regexes

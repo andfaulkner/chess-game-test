@@ -21,6 +21,29 @@ class WrapperClass extends React.Component<{}> {
 }
 
 /**
+ * A simple text component
+ */
+const TextComponent = () => {
+    return (
+        <div>A text component TWO</div>
+    );
+};
+
+TextComponent.displayName = `TextComponent`;
+
+/**
+* Say hello to someone!
+ */
+const HelloNameComponent = (props: {firstName: string, lastName: string}) => (
+    <div>
+        Hello {props.firstName} {props.lastName}!
+    </div>
+);
+
+HelloNameComponent.displayName = `HelloNameComponent`;
+
+
+/**
  * Actual application - root component
  */
 class Game extends React.Component {
@@ -32,7 +55,10 @@ class Game extends React.Component {
             <MobxProvider appState={rootStore}>
                 <WrapperClass>
                     <div>
-                        <BoardContainer />;
+                        <TextComponent />
+                        <HelloNameComponent firstName="Eric" lastName="EatsPoop" />
+                        <HelloNameComponent firstName="Eric" lastName="DrinksPee" />
+                        <BoardContainer />
                     </div>
                 </WrapperClass>
             </MobxProvider>
