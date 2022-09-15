@@ -60,6 +60,80 @@ CURRENT LOCATION
     !   Basic properties
     !   "this" (basics)
 
+----------------------------------------------------------------------------------------------------
+Regular expressions
+===================
+Cheatsheet
+----------
+### Positionals / optionals
+?           =   Make previous char/"set" of chars optional
+\           =   "Escape" next char (i.e. use a regex symbol as a regular char) e.g. \.
+^           =   Match beginning of string/line
+$           =   Match end of string/line
+.           =   Match any character
+
+### Sets
+[]          =   Match ANY char inside braces e.g. [ABC] matches either A, B or C
+- in []     =   Match any chars BETWEEN chars around the "-"
+                e.g. [a-z] matches any lowercase letter
+                e.g. [A-Z] matches any uppercase letter
+                e.g. [0-9] matches any digit
+^ in []     =   Match any chars BESIDES the chars in the set
+                e.g. [^a-zA-Z] Match non-letter characters
+
+{} with 1 # =   Match the previous char the number of times in the braces
+                e.g. [0-9]{4}  <- Matches any 4-digit number.
+                                  DOES NOT match 3-digit numbers
+                e.g. [a-z]{3}  <- Matches any 3-digit number.
+                                  DOES NOT match 2-digit numbers
+
+### Quantity
+*           =   Match 0 or more of the previous character
+                e.g. `Q[a-z]*q` <- Matches anything between a capital Q
+                                   and a lowercase q, including Qq
+
++           =   Match 1 or more of the previous character
+
+{} with #,# =   Match the previous char any number of times within the RANGE between
+                the first # and the second #.
+                e.g. [0-9]{3,4} <- Matches any 3-digit or 4-digit number.
+
+
+### Lookahead & lookbehind
+(?=a)      =    Match anything with the given char or set directly in front of it
+                e.g. [a-zA-Z](?=g) <- Only match characters that are right before a g
+
+
+[1-2][0-9]{3}\-[01]?[0-9]\-[1-3][0-9]\..+
+TODO
+----
+!   Simple text matching e.g. asdf
+-   Symbols
+    !   \   <- escapes special characters
+    !   ^
+    !   $
+    !   ?               e.g. asdf? -- Make the character (or matching "set") directly before it optional
+    !   []              e.g. [1-9a-zA-Z]
+    !   [] with chars   e.g. [HRB]
+    !   [] with -       e.g. [A-Z]
+    !   [] with ^       e.g. [^A-Z]
+    -   -               e.g. [1-9a-zA-Z]
+    -   .
+    -   *
+    -   +
+    -   Braces
+    -   Lookahead, lookbehind
+-   Flags
+    -   g
+    -   i
+    -   m
+
+-   Special characters
+    -   \s
+    -   \S
+----------------------------------------------------------------------------------------------------
+
+
 -   React
     -   Model-view-controller
     -   What it is
