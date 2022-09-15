@@ -65,7 +65,7 @@ export default {
                 //
                 // \.tsx$ would match (of the above) only:
                 //   hello.tsx
-                test: /\.tsx$/,
+                test: /\.tsx?$/,
                 use: [
                     {
                         loader: 'ts-loader',
