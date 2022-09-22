@@ -34,6 +34,7 @@ Don't match variants of yeet with different endings.
 e.g. match "yeet" but not "yeety".
 Match "yeeeeeeet" but not "yeeeeeett":
 
+## Data
 yeet
 yeeto
 yeeeeeet
@@ -53,3 +54,22 @@ yeeeeeeeeeeeeeet
 ----------------------------------------------------------------------------------------------------
 Exercise 3
 ==========
+Match all lines containing a single complete sentence only
+
+## Data
+The quick brown fox.
+The quick brown fox. It jumped over the lazy dog.
+The brown quick fox
+No more quick foxes? Sure.
+Is that a quick brown fox?
+Don't eat my quick brown fox!
+Want to quick my brown fox? Yes I do
+Hm? Yes that's a fox.
+My fox is quick and brown.
+Hm? No that's not a fox!
+
+## Expected matches
+The quick brown fox.
+Is that a quick brown fox?
+Don't eat my quick brown fox!
+My fox is quick and brown.
