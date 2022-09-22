@@ -72,6 +72,14 @@ Cheatsheet
 $           =   Match end of string/line
 .           =   Match any character
 
+(a|z)       =   Match either the item before the line, or the item after. If there are 3+,
+                Match any item before, after, or between the lines.
+                e.g. "f: (orange|apple|pear|banana)\." will match:
+                    f: orange.
+                    f: apple.
+                    f: pear.
+                    f: banana.
+
 ### Sets
 []          =   Match ANY char inside braces e.g. [ABC] matches either A, B or C
 - in []     =   Match any chars BETWEEN chars around the "-"
@@ -93,6 +101,8 @@ $           =   Match end of string/line
                                    and a lowercase q, including Qq
 
 +           =   Match 1 or more of the previous character
+                e.g. `Q[a-z]+q` <- Matches anything between a capital Q
+                                   and a lowercase q, NOT including Qq
 
 {} with #,# =   Match the previous char any number of times within the RANGE between
                 the first # and the second #.
@@ -104,7 +114,6 @@ $           =   Match end of string/line
                 e.g. [a-zA-Z](?=g) <- Only match characters that are right before a g
 
 
-[1-2][0-9]{3}\-[01]?[0-9]\-[1-3][0-9]\..+
 TODO
 ----
 !   Simple text matching e.g. asdf
@@ -131,6 +140,8 @@ TODO
 -   Special characters
     -   \s
     -   \S
+
+-   Optionals (|)
 ----------------------------------------------------------------------------------------------------
 
 
