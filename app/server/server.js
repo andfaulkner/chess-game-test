@@ -1,5 +1,7 @@
 /*-------------------------------------- IMPORTS EXAMPLES ----------------------------------------*/
-// Standalone require, no exported data.
+/**
+ * Standalone require, no exported data.
+ */
 require('./test-import');
 
 // Require that receives exported object.
@@ -15,7 +17,9 @@ console.log(`Eric is`, ericInfoObj.whatEricIs);
 const express = require('express');
 const app = express();
 
-// Body parser setup
+/**
+ * Body parser setup.
+ */
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json()
 
@@ -24,8 +28,8 @@ const path = require('path');
 const buildPath = path.join(__dirname, '../../build');
 
 /*----------------------------------------- APPLICATION ------------------------------------------*/
-/*
- * Add static server plugin
+/**
+ * Add static server plugin.
  */
 app.use(express.static('build'));
 
@@ -48,7 +52,9 @@ app.get('/eric-info-redux', (req, res) => {
     res.status(200).send(`Eric is ${ericInfoObj.whatEricIs}`);
 });
 
-// Route that takes query parameter
+/*
+ * Route that takes query parameter.
+ */
 app.get('/info-redux', (req, res) => {
     const nameReceived = req.query.name;
     res.status(200).send(`${nameReceived} is one big piece of poop`);
@@ -76,8 +82,9 @@ app.delete('/name', jsonParser, (req, res) => {
 
 /*---------------------------------------- LAUNCH SERVER -----------------------------------------*/
 /*
- * Launch the server
+ * Launch the server.
  */
 const server = app.listen(8083, () => {
     console.log('Server listening at port 8083');
 });
+
