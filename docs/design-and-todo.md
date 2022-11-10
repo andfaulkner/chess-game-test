@@ -146,22 +146,19 @@ TODO
 
 
 -   React
-    -   Model-view-controller
-    -   What it is
-    -   Components
-    -   SFCs
-    -   Props
-    -   Class components
+    !   Model-view-controller
+    !   What it is
+    !   Components
+    !   SFCs
+    !   Props
+    !   Class components
     -   Built-in tags
+    -   Build little toy component
+    -   Import statements
 
 -   Typescript
 
--   React
-    -   Model-view-controller
-    -   What it is
-    -   Components
-    -   Build little toy component
-    -   Import statements
+Make a bear voting application
 
 
 MODEL
