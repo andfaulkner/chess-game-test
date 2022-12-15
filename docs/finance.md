@@ -38,9 +38,22 @@ HSX (Horizons S & P 500)
 
 
 ----------------------------------------------------------------------------------------------------
+Tasks for codebase
+------------------
+-   Add comments - use JSDoc format
+-   Add jsprettier. Switch to 4 spaces
+-   Add a build step (build before sending it to the browser)
+-
+
+----------------------------------------------------------------------------------------------------
 CFP?
 -   Certified financial planner
 
+----------------------------------------------------------------------------------------------------
+RDSP
+====
+-   Registered disabled savings plan
+-   Maybe look into it anyway
 
 ----------------------------------------------------------------------------------------------------
 App for budgeting
